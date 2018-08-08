@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Роман Андреев](https://up.htmlacademy.ru/htmlcss/22/user/323827).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
