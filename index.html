@@ -6,10 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="container">
-
     <header class="header">
       <h1 class="header__caption">DEVICE</h1>
-
       <nav class="users-navigation">
         <form class="search-form">
           <input class="search-form__input" type="text" placeholder="Поиск по">
@@ -28,29 +26,48 @@
           </li>
         </ul>
       </nav>
-
-      <nav class="main-navigation">
-
-        <a class="main-navigation__link" href="#">Каталог товаров</a>
-
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Доставка</a>
+      <nav class="header-navigation">
+        <ul class="header-navigation__list">
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Каталог товаров</a>
+            <ul class="header-navigation__sub-list">
+              <li class="header-navigation__text">
+                <a class="header-navigation__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="header-navigation__text">
+                <a class="header-navigation__link" href="#">Монопод для селфи</a>
+              </li>
+              <li class="header-navigation__text">
+                <a class="header-navigation__link" href="#">Экшен-камеры</a>
+              </li>
+              <li class="header-navigation__text">
+                <a class="header-navigation__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="header-navigation__text">
+                <a class="header-navigation__link" href="#">Умные часы</a>
+              </li>
+              <li class="header-navigation__text">
+                <a class="header-navigation__link" href="#">Квадракоптеры</a>
+              </li>
+            </ul>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Гарантия</a>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Доставка</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Контакты</a>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Гарантия</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Контакты</a>
           </li>
         </ul>
 
       </nav>
     </header>
-    <main>
+    <main class="main">
       <section class="promo">
 
-        <img class="promo__logo" src="http://placehold.it/384x486">
+        <img class="promo__logo" src="http://placehold.it/384x486" alt="Селфи палка">
         <article class="promo-slider">
           <div class="promo-slider-content">
             <h2 class="promo-slider-content__caption">Делай селфи, как Бен Стиллер!</h2>
@@ -85,7 +102,6 @@
 
         </article>
       </section>
-
       <section class="products">
         <ul class="products-list">
           <li class="products__item">
@@ -114,7 +130,6 @@
           </li>
         </ul>
       </section>
-
       <section class="delivery">
 
         <form class="delivery__form">
@@ -139,7 +154,6 @@
         </div>
 
       </section>
-
       <section class="brands">
         <a class="brands__link" href="#">
           <img class="brands__img" src="http://placehold.it/260x100" width="260" height="100" alt="DJI">
@@ -154,7 +168,6 @@
           <img class="brands__img" src="http://placehold.it/260x100" width="260" height="100" alt="VIVE">
         </a>
       </section>
-
       <section class="about-us">
         <div class="about-us__content">
           <h2 class="about-us__caption">О нас</h2>
@@ -176,7 +189,6 @@
         </div>
 
       </section>
-
       <section class="popup-write-us">
         <form class="popup-write-us__form" action="">
           <label class="popup-write-us__label" for="popup-write-us__input-FIO">
@@ -197,17 +209,14 @@
           <input class="popup-write-us__submit" name="popup-write-us__submit" id="popup-write-us__submit" type="submit" value="Отправить">
         </form>
       </section>
-
       <section class="popup-map">
         <div class="popup-map__content">
           <img class="popup-map__img" src="http://placehold.it/960x559" alt="Карта" width="960" height="559">
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <h1 class="footer__caption">DEVICE</h1>
-
       <nav class="users-navigation">
         <ul class="users-navigation__list">
           <li class="users-navigation__item">
@@ -221,21 +230,20 @@
           </li>
         </ul>
       </nav>
-
-      <nav class="main-navigation">
-        <p class="main-navigation__text">г.Москва ул.Строителей, 15</p>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Доставка</a>
+      <nav class="footer-navigation">
+        <p class="footer-navigation__text">г.Москва ул.Строителей, 15</p>
+        <ul class="footer-navigation__list">
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">Доставка</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Гарантия</a>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">Гарантия</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Контакты</a>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">Контакты</a>
           </li>
         </ul>
-        <p class="main-navigation__text">Тел: +7(495)495-95-95</p>
+        <p class="footer-navigation__text">Тел: +7(495)495-95-95</p>
       </nav>
 
       <div class="social">
