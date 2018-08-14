@@ -3,279 +3,279 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container">
-<header class="header">
-  <a class="header__caption" href="index.html">DEVICE</a>
-  <nav class="users-navigation">
-    <form class="search-form">
-      <input class="search-form__input" type="text" placeholder="Поиск по">
-      <button class="search-form__button"></button>
-    </form>
-    <ul class="users-authorization">
-      <li class="users-authorization__item">
-        <a class="users-navigation__link" href="#">Валентин Петухов</a>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <a class="header__caption" href="index.html">DEVICE</a>
+    <nav class="users-navigation">
+      <form class="search-form">
+        <input class="search-form__input" type="text" placeholder="Поиск по">
+        <button class="search-form__button"></button>
+      </form>
+      <ul class="users-authorization">
+        <li class="users-authorization__item">
+          <a class="users-navigation__link" href="#">Валентин Петухов</a>
+        </li>
+        <li class="users-authorization__item">
+          <a class="users-navigation__link" href="#">Выйти</a>
+        </li>
+      </ul>
+      <ul class="users-product">
+        <li class="users-product__item">
+          <a class="users-navigation__link" href="#">Сравнить</a>
+        </li>
+        <li class="users-product__item">
+          <a class="users-navigation__link" href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="header-navigation">
+      <ul class="header-navigation__list">
+        <li class="header-navigation__item">
+          <a class="header-navigation__link" href="#">Каталог товаров</a>
+          <ul class="header-navigation__sub-list">
+            <li class="header-navigation__text">
+              <a class="header-navigation__link" href="#">Виртуальная реальность</a>
+            </li>
+            <li class="header-navigation__text">
+              <a class="header-navigation__link" href="#">Монопод для селфи</a>
+            </li>
+            <li class="header-navigation__text">
+              <a class="header-navigation__link" href="#">Экшен-камеры</a>
+            </li>
+            <li class="header-navigation__text">
+              <a class="header-navigation__link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="header-navigation__text">
+              <a class="header-navigation__link" href="#">Умные часы</a>
+            </li>
+            <li class="header-navigation__text">
+              <a class="header-navigation__link" href="#">Квадракоптеры</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header-navigation__item">
+          <a class="header-navigation__link" href="#">Доставка</a>
+        </li>
+        <li class="header-navigation__item">
+          <a class="header-navigation__link" href="#">Гарантия</a>
+        </li>
+        <li class="header-navigation__item">
+          <a class="header-navigation__link" href="#">Контакты</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+  <main class="catalog">
+    <h1 class="catalog__caption">Моноподы для селфи</h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">Главная</a>
       </li>
-      <li class="users-authorization__item">
-        <a class="users-navigation__link" href="#">Выйти</a>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">Моноподы для селфи</a>
       </li>
     </ul>
-    <ul class="users-product">
-      <li class="users-product__item">
-        <a class="users-navigation__link" href="#">Сравнить</a>
-      </li>
-      <li class="users-product__item">
-        <a class="users-navigation__link" href="#">Корзина</a>
-      </li>
-    </ul>
-  </nav>
-  <nav class="header-navigation">
-    <ul class="header-navigation__list">
-      <li class="header-navigation__item">
-        <a class="header-navigation__link" href="#">Каталог товаров</a>
-        <ul class="header-navigation__sub-list">
-          <li class="header-navigation__text">
-            <a class="header-navigation__link" href="#">Виртуальная реальность</a>
+    <section class="catalog-products">
+      <div class="catalog-products__filter">
+        <h3 class="catalog-products__caption">Фильтр:</h3>
+        <form class="catalog-products__form">
+          <fieldset class="catalog-products__fieldset">
+            <legend class="catalog-products__legend">Стоймость</legend>
+            <div class="catalog-products__slide-price"></div>
+          </fieldset>
+          <fieldset class="catalog-products__fieldset">
+            <legend class="catalog-products__legend">Цвет</legend>
+            <label class="catalog-products__label" for="catalog-products__chekbox-black">
+              Черный
+              <input class="catalog-products__chekbox" type="checkbox" name="color-black"
+                     id="catalog-products__chekbox-black">
+            </label>
+            <label class="catalog-products__label" for="catalog-products__chekbox-white">
+              Белый
+              <input class="catalog-products__chekbox" type="checkbox" name="color-white"
+                     id="catalog-products__chekbox-white">
+            </label>
+            <label class="catalog-products__label" for="catalog-products__chekbox-blue">
+              Синий
+              <input class="catalog-products__chekbox" type="checkbox" name="color-blue"
+                     id="catalog-products__chekbox-blue">
+            </label>
+            <label class="catalog-products__label" for="catalog-products__chekbox-red">
+              Красный
+              <input class="catalog-products__chekbox" type="checkbox" name="color-red"
+                     id="catalog-products__chekbox-red">
+            </label>
+            <label class="catalog-products__label" for="catalog-products__chekbox-pink">
+              Розовый
+              <input class="catalog-products__chekbox" type="checkbox" name="color-pink"
+                     id="catalog-products__chekbox-pink">
+            </label>
+          </fieldset>
+          <fieldset class="catalog-products__fieldset">
+            <legend class="catalog-products__legend">Bluetooth</legend>
+            <label class="catalog-products__label" for="catalog-products__radio-yes">
+              Есть
+              <input class="catalog-products__radio" type="radio" name="Bluetooth-yes"
+                     id="catalog-products__radio-yes">
+            </label>
+            <label class="catalog-products__label" for="catalog-products__radio-no">
+              Нет
+              <input class="catalog-products__radio" type="radio" name="Bluetooth-no"
+                     id="catalog-products__radio-no">
+            </label>
+          </fieldset>
+
+          <input class="catalog-products__submit" type="submit" value="Показать">
+        </form>
+      </div>
+      <div class="catalog-products__content">
+        <ul class="catalog-products__sort">
+          <li class="catalog-products__caption">
+            <a class="catalog-products__link" href="#">Сортировка</a>
           </li>
-          <li class="header-navigation__text">
-            <a class="header-navigation__link" href="#">Монопод для селфи</a>
+          <li class="catalog-products__text">
+            <a class="catalog-products__link" href="#">По цене</a>
           </li>
-          <li class="header-navigation__text">
-            <a class="header-navigation__link" href="#">Экшен-камеры</a>
+          <li class="catalog-products__text">
+            <a class="catalog-products__link" href="#">По типу</a>
           </li>
-          <li class="header-navigation__text">
-            <a class="header-navigation__link" href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="header-navigation__text">
-            <a class="header-navigation__link" href="#">Умные часы</a>
-          </li>
-          <li class="header-navigation__text">
-            <a class="header-navigation__link" href="#">Квадракоптеры</a>
+          <li class="catalog-products__text">
+            <a class="catalog-products__link" href="#">По популярности</a>
           </li>
         </ul>
-      </li>
-      <li class="header-navigation__item">
-        <a class="header-navigation__link" href="#">Доставка</a>
-      </li>
-      <li class="header-navigation__item">
-        <a class="header-navigation__link" href="#">Гарантия</a>
-      </li>
-      <li class="header-navigation__item">
-        <a class="header-navigation__link" href="#">Контакты</a>
-      </li>
-    </ul>
-
-  </nav>
-</header>
-<main class="catalog">
-  <h1 class="catalog__caption">Моноподы для селфи</h1>
-  <ul class="breadcrumbs">
-    <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link" href="#">Главная</a>
-    </li>
-    <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link" href="#">Каталог товаров</a>
-    </li>
-    <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link" href="#">Моноподы для селфи</a>
-    </li>
-  </ul>
-  <section class="catalog-products">
-    <div class="catalog-products__filter">
-      <h3 class="catalog-products__caption">Фильтр:</h3>
-      <form class="catalog-products__form">
-        <fieldset class="catalog-products__fieldset">
-          <legend class="catalog-products__legend">Стоймость</legend>
-          <div class="catalog-products__slide-price"></div>
-        </fieldset>
-        <fieldset class="catalog-products__fieldset">
-          <legend class="catalog-products__legend">Цвет</legend>
-          <label class="catalog-products__label" for="catalog-products__chekbox-black">
-            Черный
-            <input class="catalog-products__chekbox" type="checkbox" name="color-black"
-                   id="catalog-products__chekbox-black">
-          </label>
-          <label class="catalog-products__label" for="catalog-products__chekbox-white">
-            Белый
-            <input class="catalog-products__chekbox" type="checkbox" name="color-white"
-                   id="catalog-products__chekbox-white">
-          </label>
-          <label class="catalog-products__label" for="catalog-products__chekbox-blue">
-            Синий
-            <input class="catalog-products__chekbox" type="checkbox" name="color-blue"
-                   id="catalog-products__chekbox-blue">
-          </label>
-          <label class="catalog-products__label" for="catalog-products__chekbox-red">
-            Красный
-            <input class="catalog-products__chekbox" type="checkbox" name="color-red"
-                   id="catalog-products__chekbox-red">
-          </label>
-          <label class="catalog-products__label" for="catalog-products__chekbox-pink">
-            Розовый
-            <input class="catalog-products__chekbox" type="checkbox" name="color-pink"
-                   id="catalog-products__chekbox-pink">
-          </label>
-        </fieldset>
-        <fieldset class="catalog-products__fieldset">
-          <legend class="catalog-products__legend">Bluetooth</legend>
-          <label class="catalog-products__label" for="catalog-products__radio-yes">
-            Есть
-            <input class="catalog-products__radio" type="radio" name="Bluetooth-yes"
-                   id="catalog-products__radio-yes">
-          </label>
-          <label class="catalog-products__label" for="catalog-products__radio-no">
-            Нет
-            <input class="catalog-products__radio" type="radio" name="Bluetooth-no"
-                   id="catalog-products__radio-no">
-          </label>
-        </fieldset>
-
-        <input class="catalog-products__submit" type="submit" value="Показать">
-      </form>
+        <ul class="catalog-products__items">
+          <li class="catalog-products__item">
+            <figure class="catalog-products__figure">
+              <img class="catalog-products__img" src="http://placehold.it/360x380" width="360" height="380"
+                   alt="Любительская селфи-палка">
+              <figcaption class="catalog-products__figcaption">
+                <a class="catalog-products__name">Любительская селфи-палка</a>500 руб.
+                <p class="catalog-products__status">New</p>
+              </figcaption>
+            </figure>
+            <div class="catalog-products__hover">
+              <a class="catalog-products__button" href="#">В корзину</a>
+              <a class="catalog-products__text">Добавить к сравнению</a>
+            </div>
+          </li>
+          <li class="catalog-products__item">
+            <figure class="catalog-products__figure">
+              <img class="catalog-products__img" src="http://placehold.it/360x380" width="360" height="380"
+                   alt="Профессиональная селфи-палка">
+              <figcaption class="catalog-products__figcaption">
+                <a class="catalog-products__name">Профессиональная селфи-палка</a> 1 500 руб.
+                <p class="catalog-products__status">New</p>
+              </figcaption>
+            </figure>
+            <div class="catalog-products__hover">
+              <a class="catalog-products__button" href="#">В корзину</a>
+              <a class="catalog-products__text">Добавить к сравнению</a>
+            </div>
+          </li>
+          <li class="catalog-products__item">
+            <figure class="catalog-products__figure">
+              <img class="catalog-products__img" src="http://placehold.it/360x380" width="360" height="380"
+                   alt="Непотопляемая селфи-палка">
+              <figcaption class="catalog-products__figcaption">
+                <a class="catalog-products__name">Непотопляемая селфи-палка</a> 2 500 руб.
+                <p class="catalog-products__status">New</p>
+              </figcaption>
+            </figure>
+            <div class="catalog-products__hover">
+              <a class="catalog-products__button" href="#">В корзину</a>
+              <a class="catalog-products__text">Добавить к сравнению</a>
+            </div>
+          </li>
+          <li class="catalog-products__item">
+            <figure class="catalog-products__figure">
+              <img class="catalog-products__img" src="http://placehold.it/360x380" width="360" height="380"
+                   alt="Селфи-палка Следуй за мной">
+              <figcaption class="catalog-products__figcaption">
+                <a class="catalog-products__name">Селфи-палка "Следуй за мной"</a> 4 900 руб.
+                <p class="catalog-products__status">New</p>
+              </figcaption>
+            </figure>
+            <div class="catalog-products__hover">
+              <a class="catalog-products__button" href="#">В корзину</a>
+              <a class="catalog-products__text">Добавить к сравнению</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="catalog-pagination">
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-item__link" href="#">Назад</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-item__link" href="#">1</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-item__link" href="#">2</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-item__link" href="#">3</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-item__link" href="#">Вперед</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer__caption" href="index.html">DEVICE</a>
+    <nav class="users-navigation">
+      <ul class="users-authorization">
+        <li class="users-authorization__item">
+          <a class="users-navigation__link" href="#">Валентин Петухов</a>
+        </li>
+        <li class="users-authorization__item">
+          <a class="users-navigation__link" href="#">Выйти</a>
+        </li>
+      </ul>
+      <ul class="users-product">
+        <li class="users-product__item">
+          <a class="users-navigation__link" href="#">Сравнить</a>
+        </li>
+        <li class="users-product__item">
+          <a class="users-navigation__link" href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="footer-navigation">
+      <address class="footer-navigation__text">г.Москва ул.Строителей, 15</address>
+      <ul class="footer-navigation__list">
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Доставка</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Гарантия</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <a class="footer-navigation__text" href="tel:+74954959595">Тел: +7(495)495-95-95</a>
+    </nav>
+    <div class="social">
+      <a class="social__facebook" href="#">
+        <img class="social__img" src="http://placehold.it/32x32" width="32" height="32" alt="Facebook">
+      </a>
+      <a class="social__instagram" href="#">
+        <img class="social_img" src="http://placehold.it/32x32" width="32" height="32" alt="instagram">
+      </a>
+      <a class="social__twitter" href="#">
+        <img class="social_img" src="http://placehold.it/32x32" width="32" height="32" alt="twitter">
+      </a>
     </div>
-    <div class="catalog-products__content">
-      <ul class="catalog-products__sort">
-        <li class="catalog-products__caption">
-          <a class="catalog-products__link" href="#">Сортировка</a>
-        </li>
-        <li class="catalog-products__text">
-          <a class="catalog-products__link" href="#">По цене</a>
-        </li>
-        <li class="catalog-products__text">
-          <a class="catalog-products__link" href="#">По типу</a>
-        </li>
-        <li class="catalog-products__text">
-          <a class="catalog-products__link" href="#">По популярности</a>
-        </li>
-      </ul>
-      <ul class="catalog-products__items">
-        <li class="catalog-products__item">
-          <figure class="catalog-products__figure">
-            <img class="catalog-products__img" src="http://placehold.it/360x380" width="360" height="380"
-                 alt="Любительская селфи-палка">
-            <figcaption class="catalog-products__figcaption">
-              <a class="catalog-products__name">Любительская селфи-палка</a>500 руб.
-              <p class="catalog-products__status">New</p>
-            </figcaption>
-          </figure>
-          <div class="catalog-products__hover">
-            <a class="catalog-products__button" href="#">В корзину</a>
-            <a class="catalog-products__text">Добавить к сравнению</a>
-          </div>
-        </li>
-        <li class="catalog-products__item">
-          <figure class="catalog-products__figure">
-            <img class="catalog-products__img" src="http://placehold.it/360x380" width="360" height="380"
-                 alt="Профессиональная селфи-палка">
-            <figcaption class="catalog-products__figcaption">
-              <a class="catalog-products__name">Профессиональная селфи-палка</a> 1 500 руб.
-              <p class="catalog-products__status">New</p>
-            </figcaption>
-          </figure>
-          <div class="catalog-products__hover">
-            <a class="catalog-products__button" href="#">В корзину</a>
-            <a class="catalog-products__text">Добавить к сравнению</a>
-          </div>
-        </li>
-        <li class="catalog-products__item">
-          <figure class="catalog-products__figure">
-            <img class="catalog-products__img" src="http://placehold.it/360x380" width="360" height="380"
-                 alt="Непотопляемая селфи-палка">
-            <figcaption class="catalog-products__figcaption">
-              <a class="catalog-products__name">Непотопляемая селфи-палка</a> 2 500 руб.
-              <p class="catalog-products__status">New</p>
-            </figcaption>
-          </figure>
-          <div class="catalog-products__hover">
-            <a class="catalog-products__button" href="#">В корзину</a>
-            <a class="catalog-products__text">Добавить к сравнению</a>
-          </div>
-        </li>
-        <li class="catalog-products__item">
-          <figure class="catalog-products__figure">
-            <img class="catalog-products__img" src="http://placehold.it/360x380" width="360" height="380"
-                 alt="Селфи-палка Следуй за мной">
-            <figcaption class="catalog-products__figcaption">
-              <a class="catalog-products__name">Селфи-палка "Следуй за мной"</a> 4 900 руб.
-              <p class="catalog-products__status">New</p>
-            </figcaption>
-          </figure>
-          <div class="catalog-products__hover">
-            <a class="catalog-products__button" href="#">В корзину</a>
-            <a class="catalog-products__text">Добавить к сравнению</a>
-          </div>
-        </li>
-      </ul>
-      <ul class="catalog-pagination">
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-item__link" href="#">Назад</a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-item__link" href="#">1</a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-item__link" href="#">2</a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-item__link" href="#">3</a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-item__link" href="#">Вперед</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-</main>
-<footer class="footer">
-  <a class="footer__caption" href="index.html">DEVICE</a>
-  <nav class="users-navigation">
-    <form class="search-form">
-      <input class="search-form__input" type="text" placeholder="Поиск по">
-      <button class="search-form__button"></button>
-    </form>
-    <ul class="users-authorization">
-      <li class="users-authorization__item">
-        <a class="users-navigation__link" href="#">Валентин Петухов</a>
-      </li>
-      <li class="users-authorization__item">
-        <a class="users-navigation__link" href="#">Выйти</a>
-      </li>
-    </ul>
-    <ul class="users-product">
-      <li class="users-product__item">
-        <a class="users-navigation__link" href="#">Сравнить</a>
-      </li>
-      <li class="users-product__item">
-        <a class="users-navigation__link" href="#">Корзина</a>
-      </li>
-    </ul>
-  </nav>
-  <nav class="footer-navigation">
-    <address class="footer-navigation__text">г.Москва ул.Строителей, 15</address>
-    <ul class="footer-navigation__list">
-      <li class="footer-navigation__item">
-        <a class="footer-navigation__link" href="#">Доставка</a>
-      </li>
-      <li class="footer-navigation__item">
-        <a class="footer-navigation__link" href="#">Гарантия</a>
-      </li>
-      <li class="footer-navigation__item">
-        <a class="footer-navigation__link" href="#">Контакты</a>
-      </li>
-    </ul>
-    <a class="footer-navigation__text" href="tel:+74954959595">Тел: +7(495)495-95-95</a>
-  </nav>
-  <div class="social">
-    <a class="social__facebook" href="#">
-      <img class="social__img" src="http://placehold.it/32x32" width="32" height="32" alt="Facebook">
-    </a>
-    <a class="social__instagram" href="#">
-      <img class="social_img" src="http://placehold.it/32x32" width="32" height="32" alt="instagram">
-    </a>
-    <a class="social__twitter" href="#">
-      <img class="social_img" src="http://placehold.it/32x32" width="32" height="32" alt="twitter">
-    </a>
-  </div>
-</footer>
+  </footer>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
