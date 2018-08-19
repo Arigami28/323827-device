@@ -12,7 +12,7 @@
     <nav class="users-navigation">
       <form class="search-form">
         <input class="search-form__input" type="text" placeholder="Поиск по">
-        <button class="search-form__button" type="button"></button>
+        <button class="search-form__button" type="submit"></button>
       </form>
       <ul class="users-authorization">
         <li class="users-authorization__item">
@@ -88,9 +88,18 @@
         <form class="catalog-products__form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="catalog-products__fieldset">
             <legend class="catalog-products__legend">Стоймость</legend>
-            <div class="catalog-products__range"></div>
-            <p class="catalog-products__range-start">от 0</p>
-            <p class="catalog-products__range-end">до 5000</p>
+            <div class="range">
+              <div class="range__item"></div>
+              <div class="range__item"></div>
+            </div>
+            <label class="catalog-products__label" for="catalog-products__range-start">
+              от
+              <input class="catalog-products__text" type="text" name="range-price-start" id="catalog-products__range-start" value="0">
+            </label>
+            <label class="catalog-products__label" for="catalog-products__range-end">
+              до
+              <input class="catalog-products__text" type="text" name="range-price-end" id="catalog-products__range-end" value="5000">
+            </label>
           </fieldset>
           <fieldset class="catalog-products__fieldset">
             <legend class="catalog-products__legend">Цвет</legend>
