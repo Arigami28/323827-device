@@ -8,7 +8,7 @@
 <body>
 <div class="wrapper">
   <header class="header">
-    <a class="header__caption" href="index.html">DEVICE</a>
+    <a class="header__logo" href="index.html">DEVICE</a>
     <nav class="users-navigation">
       <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
         <input class="search-form__input" type="text" placeholder="Поиск по">
@@ -66,7 +66,6 @@
           <a class="header-navigation__link" href="#">Контакты</a>
         </li>
       </ul>
-
     </nav>
   </header>
   <main class="catalog">
@@ -92,16 +91,18 @@
               <div class="range__bar">
                 <div class="range__filling"></div>
               </div>
-              <div class="range__item"></div>
-              <div class="range__item"></div>
+              <button class="range__item" type="button"></button>
+              <button class="range__item" type="button"></button>
             </div>
             <label class="catalog-products__label" for="catalog-products__range-start">
               от
-              <input class="catalog-products__text" type="text" name="range-price-start" id="catalog-products__range-start" value="0">
+              <input class="catalog-products__text" type="text" name="range-price-start"
+                     id="catalog-products__range-start" value="0">
             </label>
             <label class="catalog-products__label" for="catalog-products__range-end">
               до
-              <input class="catalog-products__text" type="text" name="range-price-end" id="catalog-products__range-end" value="5000">
+              <input class="catalog-products__text" type="text" name="range-price-end" id="catalog-products__range-end"
+                     value="5000">
             </label>
           </fieldset>
           <fieldset class="catalog-products__fieldset">
@@ -242,7 +243,7 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__caption" href="index.html">DEVICE</a>
+    <a class="footer__logo" href="index.html">DEVICE</a>
     <nav class="users-navigation">
       <ul class="users-authorization">
         <li class="users-authorization__item">
@@ -286,8 +287,10 @@
       <a class="social__twitter" href="#">
         <img class="social_img" src="http://placehold.it/32x32" width="32" height="32" alt="twitter">
       </a>
+      <a class="social__htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="social_img" src="http://placehold.it/27x35" width="27" height="35" alt="htmlacademy">
+      </a>
     </div>
-    <a class="footer__htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
   </footer>
 </div>
 <script src="js/script.js"></script>
