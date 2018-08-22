@@ -9,7 +9,9 @@
 <body>
 <div class="wrapper">
   <header class="header">
-    <a class="header__logo" href="#">DEVICE</a>
+    <a class="header__logo" href="#">
+      <img class="header__img" src="img/logo-header.svg" width="163" height="36" alt="DEVICE">
+    </a>
     <nav class="users-navigation">
       <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
         <input class="search-form__input" type="text" placeholder="Поиск по">
@@ -33,23 +35,23 @@
       <ul class="header-navigation__list">
         <li class="header-navigation__item">
           <a class="header-navigation__link" href="#">Каталог товаров</a>
-          <ul class="header-navigation__sub-list">
-            <li class="header-navigation__text">
+          <ul class="header-navigation__sub-list visually-hidden">
+            <li class="header-navigation__item">
               <a class="header-navigation__link" href="#">Виртуальная реальность</a>
             </li>
-            <li class="header-navigation__text">
+            <li class="header-navigation__item">
               <a class="header-navigation__link" href="#">Монопод для селфи</a>
             </li>
-            <li class="header-navigation__text">
+            <li class="header-navigation__item">
               <a class="header-navigation__link" href="#">Экшен-камеры</a>
             </li>
-            <li class="header-navigation__text">
+            <li class="header-navigation__item">
               <a class="header-navigation__link" href="#">Фитнес-браслеты</a>
             </li>
-            <li class="header-navigation__text">
+            <li class="header-navigation__item">
               <a class="header-navigation__link" href="#">Умные часы</a>
             </li>
-            <li class="header-navigation__text">
+            <li class="header-navigation__item">
               <a class="header-navigation__link" href="#">Квадракоптеры</a>
             </li>
           </ul>
@@ -83,7 +85,7 @@
               <th class="promo-info__column">5 кг</th>
               <th class="promo-info__column">Карбон</th>
             </tr>
-            <tr class="promo-info_row">
+            <tr class="promo-info__row">
               <td class="promo-info__column">Длина палки</td>
               <td class="promo-info__column">Вес палки</td>
               <td class="promo-info__column">Материал</td>
@@ -104,7 +106,7 @@
               <th class="promo-info__column">5 кг</th>
               <th class="promo-info__column">Карбон</th>
             </tr>
-            <tr class="promo-info_row">
+            <tr class="promo-info__row">
               <td class="promo-info__column">Без подзарядки</td>
               <td class="promo-info__column">Вес палки</td>
               <td class="promo-info__column">Материал</td>
@@ -126,7 +128,7 @@
               <th class="promo-info__column">50 м</th>
               <th class="promo-info__column">Карбон</th>
             </tr>
-            <tr class="promo-info_row">
+            <tr class="promo-info__row">
               <td class="promo-info__column">Дальность полета</td>
               <td class="promo-info__column">Радиус поражения</td>
               <td class="promo-info__column">Материал</td>
@@ -149,22 +151,22 @@
     <section class="products">
       <ul class="products-list">
         <li class="products__item products__item_background_virtual-reality">
-          <a class="products__caption">Виртуальная реальность</a>
+          <a class="products__link" href="#">Виртуальная реальность</a>
         </li>
         <li class="product__item products__item_background_monopods-for-selfie">
-          <a class="products__caption">Моноподы для селфи</a>
+          <a class="products__link" href="#">Моноподы для селфи</a>
         </li>
         <li class="products__item products__item_background_action-cameras">
-          <a class="products__caption">Экшен-камеры</a>
+          <a class="products__link" href="#">Экшен-камеры</a>
         </li>
         <li class="products__item products__item_background_fitness-bracelets">
-          <a class="products__caption">Фитнес-браслеты</a>
+          <a class="products__link" href="#">Фитнес-браслеты</a>
         </li>
         <li class="products__item products__item_background_smart_watch">
-          <a class="products__caption">Умные часты</a>
+          <a class="products__link" href="#">Умные часы</a>
         </li>
         <li class="products__item products__item_background_quadrocopter">
-          <a class="products__caption">Квадракоптеры</a>
+          <a class="products__link" href="#">Квадракоптеры</a>
         </li>
       </ul>
     </section>
@@ -172,15 +174,15 @@
       <div class="delivery__pagination-slider">
         <label class="delivery__label" for="delivery__input-delivery">
           Доставка
-          <input class="delivery__input" type="checkbox" id="delivery__input-delivery">
+          <input class="delivery__input visually-hidden" type="checkbox" id="delivery__input-delivery">
         </label>
         <label class="delivery__label" for="delivery__input-guarantee">
           Гарантия
-          <input class="delivery__input" type="checkbox" id="delivery__input-guarantee">
+          <input class="delivery__input  visually-hidden" type="checkbox" id="delivery__input-guarantee">
         </label>
         <label class="delivery__label" for="delivery__input-credit">
           Кредит
-          <input class="delivery__input" type="checkbox" id="delivery__input-credit">
+          <input class="delivery__input  visually-hidden" type="checkbox" id="delivery__input-credit">
         </label>
       </div>
       <div class="delivery__slider">
@@ -221,7 +223,6 @@
         </ul>
         <a class="about-us__link" href="#">Подробнее о нас</a>
       </div>
-
       <div class="about-us__content">
         <h2 class="about-us__caption">Контакты</h2>
         <p class="about-us__text">Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить
@@ -233,7 +234,9 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__logo" href="#">DEVICE</a>
+    <a class="footer__logo" href="#">
+      <img class="footer__img" src="img/logo-footer.svg" width="185" height="36" alt="DEVICE">
+    </a>
     <nav class="users-navigation">
       <ul class="users-authorization">
         <li class="users-authorization__item">
@@ -279,7 +282,7 @@
       </a>
     </div>
   </footer>
-  <section class="popup popup_write-us visually-hidden">
+  <section class="popup popup_write-us ">
     <button class="popup-write-us__button-close" type="button"></button>
     <form class="popup-write-us__form" method="post" action="https://echo.htmlacademy.ru">
       <label class="popup-write-us__label" for="popup-write-us__input-FIO">
