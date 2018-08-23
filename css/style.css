@@ -61,7 +61,7 @@
   text-transform: uppercase;
 }
 
-.users-navigation__link {
+.header .users-navigation__link {
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
@@ -77,7 +77,23 @@
   text-transform: none;
 }
 
+.header .users-navigation__link:hover,
+.header-navigation__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
 
+.header  .users-navigation__link:active,
+.header-navigation__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header__logo:hover{
+  opacity: 0.6;
+}
+
+.header__logo:active {
+  opacity: 0.3;
+}
 /*Блок promo в index.html*/
 .promo-slider-content__caption {
   font-family: "Gilroy ExtraBold","Arial", sans-serif;
@@ -134,7 +150,9 @@
   letter-spacing: 0.2px;
 }
 
-
+.products__item:active {
+  opacity: 0.3;
+}
 /*Блок delivery в index.html*/
 .delivery__label {
   font-family: "Gilroy ExtraBold","Arial", sans-serif;
@@ -228,6 +246,47 @@
   text-transform: uppercase;
 }
 
+.footer-navigation__text {
+  font-style: normal;
+}
+
+.footer-navigation__link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-navigation__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-navigation__link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-navigation__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__logo:hover {
+  opacity: 0.6;
+}
+
+.footer__logo:active {
+  opacity: 0.3;
+}
+
+.footer .users-navigation__link{
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .users-navigation__link:hover {
+  color: #ffffff;
+}
+.footer .users-navigation__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 /*Блок popup_write-us*/
 .popup-write-us__label {
@@ -252,6 +311,7 @@
   text-align: center;
 }
 
+/*блок catalog страницы catalog.html*/
 .catalog__caption {
   font-family: "Gilroy ExtraBold","Arial", sans-serif;
   font-size: 47.5px;
@@ -344,3 +404,23 @@
 .catalog-pagination-item:nth-child(2) .catalog-pagination-item__link{
   color: #000000;
 }
+
+.breadcrumbs__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs__link:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.catalog-products__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.catalog-products__link:active {
+  color: #000000;
+}
+.catalog-pagination-item:nth-child(1) .catalog-pagination-item__link:active,
+.catalog-pagination-item:nth-child(5) .catalog-pagination-item__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
