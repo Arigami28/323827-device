@@ -1,32 +1,38 @@
 @charset "utf-8";
 /*Обертка всех страниц*/
 .wrapper {
-  width: 1440px;
-  height: 2795px;
   background-color: #ffffff;
-  font-family: "Opensans Light","Arial", sans-serif;
+  font-family: "Open sans", "Arial", sans-serif;
   color: #000000;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
 }
+
 /*Подключение шрифтов*/
 @font-face {
   font-family: "Gilroy ExtraBold";
+  font-style: normal;
+  font-weight: bold;
   src: url('../fonts/gilroyextrabold.woff2') format('woff2');
 }
+
 @font-face {
-  font-family: "Gilroy Light";
-  src: url('../fonts/gilroylight.woff2') format('woff2');
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
 }
+
 @font-face {
-  font-family: "Opensans";
-  src: url('../fonts/opensans.woff2') format('woff2');
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
 }
-@font-face {
-  font-family: "Opensans Light";
-  src: url('../fonts/opensanslight.woff2') format('woff2');
-}
+
 /*Сокрытие элементов приложения*/
 .visually-hidden {
   position: absolute;
@@ -44,16 +50,16 @@
   background: #f7e296;
   margin-top: 40px;
 }
+
 .users-authorization,
 .users-product,
 .header-navigation__list,
 .header-navigation__sub-list {
- list-style: none;
+  list-style: none;
 }
 
-
 .header-navigation__link {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 800;
   line-height: 1.33;
@@ -68,8 +74,8 @@
   letter-spacing: 0.2px;
 }
 
-.header-navigation__sub-list  .header-navigation__link {
-  font-family: "Opensans Light","Arial", sans-serif;
+.header-navigation__sub-list .header-navigation__link {
+  font-family: "Open sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 2.4;
@@ -82,21 +88,22 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
-.header  .users-navigation__link:active,
+.header .users-navigation__link:active,
 .header-navigation__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header__logo:hover{
+.header__logo:hover {
   opacity: 0.6;
 }
 
 .header__logo:active {
   opacity: 0.3;
 }
+
 /*Блок promo в index.html*/
 .promo-slider-content__caption {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 47.5px;
   font-weight: 800;
   line-height: 1.18;
@@ -112,23 +119,23 @@
   color: #464646;
 }
 
-.promo-info__row:nth-child(1) {
-  font-family: "Gilroy Light","Arial", sans-serif;
+.promo-info__caption {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 1.33;
   letter-spacing: 0.4px;
 }
 
-.promo-info__row:nth-child(2) {
+.promo-info__text {
   font-size: 13px;
   font-weight: 300;
   line-height: 1.54;
   letter-spacing: 0.1px;
 }
 
-.promo__link {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+.button {
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18.5px;
   font-weight: 800;
   line-height: 1.27;
@@ -136,14 +143,13 @@
   text-transform: uppercase;
 }
 
-
 /*Блок products в index.html*/
 .products-list {
   list-style: none;
 }
 
 .products__link {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
@@ -153,9 +159,10 @@
 .products__item:active {
   opacity: 0.3;
 }
+
 /*Блок delivery в index.html*/
 .delivery__label {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18.5px;
   font-weight: 800;
   line-height: 1.27;
@@ -164,12 +171,13 @@
 }
 
 .delivery__caption {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 47.5px;
   font-weight: 800;
   line-height: 1;
   letter-spacing: 0.5px;
 }
+
 .delivery__text {
   font-size: 15px;
   font-weight: 300;
@@ -180,7 +188,6 @@
 
 .delivery {
   display: flex;
-  height: 388px;
   background-image: linear-gradient(transparent 40%, #e5e5e5 40%);
 }
 
@@ -188,13 +195,14 @@
   display: flex;
   flex-direction: column;
 }
+
 /*Блок about-us в index.html*/
 .about-us__list {
   list-style: none;
 }
 
 .about-us__caption {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 47.5px;
   font-weight: 800;
   line-height: 1;
@@ -209,14 +217,14 @@
 }
 
 .about-us__list-item {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 2.5;
 }
 
 .about-us__link {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18.5px;
   font-weight: 800;
   line-height: 1.27;
@@ -229,16 +237,19 @@
   background-color: #464646;
   color: #ffffff;
 }
+
 .footer-navigation__list {
   list-style: none;
 }
+
 .footer-navigation__text {
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
 }
+
 .footer-navigation__link {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
@@ -261,6 +272,7 @@
 .footer-navigation__link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-navigation__link:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -273,7 +285,7 @@
   opacity: 0.3;
 }
 
-.footer .users-navigation__link{
+.footer .users-navigation__link {
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
@@ -284,26 +296,28 @@
 .footer .users-navigation__link:hover {
   color: #ffffff;
 }
+
 .footer .users-navigation__link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
 /*Блок popup_write-us*/
 .popup-write-us__label {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 17.5px;
   font-weight: 800;
   line-height: 1.4;
 }
+
 .popup-write-us__textarea,
 .popup-write-us__input {
-  font-family: "Opensans Light","Arial", sans-serif;
+  font-family: "Open sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.25;
 }
 
 .popup-write-us__submit {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18.5px;
   font-weight: 800;
   line-height: 1.27;
@@ -313,7 +327,7 @@
 
 /*блок catalog страницы catalog.html*/
 .catalog__caption {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 47.5px;
   font-weight: 800;
   line-height: 1;
@@ -323,7 +337,7 @@
 .catalog-products__items,
 .catalog-products__sort,
 .catalog-pagination,
-.breadcrumbs{
+.breadcrumbs {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -338,7 +352,7 @@
 }
 
 .catalog-products__caption {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 17.5px;
   font-weight: 800;
   line-height: 1.4;
@@ -347,7 +361,7 @@
 }
 
 .catalog-products__legend {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
@@ -361,14 +375,15 @@
 }
 
 .catalog-products__name {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
   letter-spacing: 0.2px;
 }
+
 .catalog-products__figcaption {
-  font-family: "Gilroy Light","Arial",sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
@@ -391,7 +406,7 @@
 }
 
 .catalog-pagination-item__link {
-  font-family: "Gilroy ExtraBold","Arial", sans-serif;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 17.5px;
   font-weight: 800;
   line-height: 1.4;
@@ -399,9 +414,10 @@
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
 }
+
 .catalog-pagination-item:nth-child(1) .catalog-pagination-item__link,
 .catalog-pagination-item:nth-child(5) .catalog-pagination-item__link,
-.catalog-pagination-item:nth-child(2) .catalog-pagination-item__link{
+.catalog-pagination-item:nth-child(2) .catalog-pagination-item__link {
   color: #000000;
 }
 
@@ -416,9 +432,11 @@
 .catalog-products__link:hover {
   color: rgba(0, 0, 0, 0.6);
 }
+
 .catalog-products__link:active {
   color: #000000;
 }
+
 .catalog-pagination-item:nth-child(1) .catalog-pagination-item__link:active,
 .catalog-pagination-item:nth-child(5) .catalog-pagination-item__link:active {
   color: rgba(0, 0, 0, 0.3);
