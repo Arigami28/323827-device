@@ -252,11 +252,50 @@
 }
 
 .products__img {
+  display: flex;
+  justify-content: center;
   width: 160px;
   height: 160px;
   background-color: #f7e296;
 
 }
+
+.popular-item-virtual-reality {
+  width: 97px;
+  height: 55px;
+  align-self: center;
+}
+
+.popular-item-monopods-for-selfie {
+  width: 86px;
+  height: 117px;
+  align-self: flex-end;
+}
+
+.popular-item-action-cameras {
+  width: 71px;
+  height: 87px;
+  align-self: center;
+}
+
+.popular-item-fitness-bracelets {
+  width: 107px;
+  height: 65px;
+  align-self: center;
+}
+
+.popular-item-smart-watch {
+  width: 56px;
+  height: 98px;
+  align-self: center;
+}
+
+.popular-item-quadrocopter {
+  width: 132px;
+  height: 69px;
+  align-self: center;
+}
+
 .products__item:active {
   opacity: 0.3;
 }
