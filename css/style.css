@@ -580,21 +580,17 @@
 }
 
 .catalog-products__item {
-  width: 360px;
-  height: 445px;
-  margin-top: 70px;
+  width: 50%;
+  min-height: 445px;
+  padding-top: 70px;
+  padding-right: 0;
+  margin: 0;
 }
-
-.catalog-products__items .catalog-products__item:nth-child(1n) {
-  margin-left: 76px;
-}
-
-.catalog-products__items .catalog-products__item:nth-child(2n) {
-  margin-left: 40px;
-}
-
 .catalog-products__figure {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .catalog-products__link:hover {
