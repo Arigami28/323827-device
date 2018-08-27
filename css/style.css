@@ -242,6 +242,8 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   min-height: 260px;
+  margin: 0;
+  padding: 0;
 }
 
 .products__item {
@@ -250,10 +252,11 @@
 }
 
 .products__img {
-  display: block;
+  width: 160px;
+  height: 160px;
   background-color: #f7e296;
-}
 
+}
 .products__item:active {
   opacity: 0.3;
 }
