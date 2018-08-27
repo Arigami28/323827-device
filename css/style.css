@@ -572,8 +572,29 @@
   color: #464646;
 }
 
-.catalog-products__sort {
+.catalog-products__items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
 
+.catalog-products__item {
+  width: 360px;
+  height: 445px;
+  margin-top: 70px;
+}
+
+.catalog-products__items .catalog-products__item:nth-child(1n) {
+  margin-left: 76px;
+}
+
+.catalog-products__items .catalog-products__item:nth-child(2n) {
+  margin-left: 40px;
+}
+
+.catalog-products__figure {
+  margin: 0;
 }
 
 .catalog-products__link:hover {
