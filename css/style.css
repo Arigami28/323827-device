@@ -252,48 +252,39 @@
 }
 
 .products__img {
-  display: flex;
-  justify-content: center;
   width: 160px;
   height: 160px;
-  background-color: #f7e296;
 
 }
 
-.popular-item-virtual-reality {
-  width: 97px;
-  height: 55px;
-  align-self: center;
+.popular-img_bg_virtual-reality {
+  background: #f7e296 url("../img/svg-images/popular-virtual-reality.svg") center no-repeat;
+  background-size: 97px 55px;
 }
 
-.popular-item-monopods-for-selfie {
-  width: 86px;
-  height: 117px;
-  align-self: flex-end;
+.popular-img_bg_monopods-for-selfie {
+  background: #f7e296 url("../img/svg-images/popular-monopods-for-selfie.svg") bottom center  no-repeat;
+  background-size: 86px 117px;
 }
 
-.popular-item-action-cameras {
-  width: 71px;
-  height: 87px;
-  align-self: center;
+.popular-img_bg_action-cameras {
+  background: #f7e296 url("../img/svg-images/popular-action-cameras.svg") center  no-repeat;
+  background-size: 71px 87px;
 }
 
-.popular-item-fitness-bracelets {
-  width: 107px;
-  height: 65px;
-  align-self: center;
+.popular-img_bg_fitness-bracelets {
+  background: #f7e296 url("../img/svg-images/popular-fitness-bracelets.svg") center  no-repeat;
+  background-size: 107px 65px;
 }
 
 .popular-item-smart-watch {
-  width: 56px;
-  height: 98px;
-  align-self: center;
+  background: #f7e296 url("../img/svg-images/popular-smart-watch.svg") center  no-repeat;
+  background-size: 56px 98px;
 }
 
 .popular-item-quadrocopter {
-  width: 132px;
-  height: 69px;
-  align-self: center;
+  background: #f7e296 url("../img/svg-images/popular-quadrocopter.svg") center  no-repeat;
+  background-size: 132px 69px;
 }
 
 .products__item:active {
