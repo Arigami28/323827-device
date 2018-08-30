@@ -10,6 +10,14 @@
 }
 
 @font-face {
+  font-family: "Gilroy light";
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+  url('../fonts/gilroylight.woff') format('woff2');
+}
+
+@font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
@@ -327,7 +335,7 @@
   display: none;
   flex-direction: row;
   flex-wrap: wrap;
-  min-height: 140px;
+  min-height: 146px;
   width: 1100px;
   position: absolute;
   top: 20px;
@@ -335,7 +343,7 @@
   padding-left: 60px;
   padding-top: 20px;
   background-color: #f7e296;
-  z-index: 1;
+  z-index: 99;
 }
 
 .header-navigation__sub-link {
@@ -369,37 +377,113 @@
 .promo {
   width: 1160px;
   min-height: 186px;
-  background-image: linear-gradient(to bottom, #f7e296 129px, transparent 129px);
+  background-image: linear-gradient(to bottom, #f7e296 115px, transparent 115px);
+  position: relative;
+  z-index: 1;
 }
 
+/*селектор слайдера*/
+.promo-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  position: relative;
+}
+
+/*селектор слайда*/
 .promo-slider__slide {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: nowrap;
+  width: 1040px;
+  min-height: 550px;
 }
 
+/*селектор изображения в слайде*/
+.promo__img {
+  display: block;
+  align-self: flex-start;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+/*селектор изображения в слайде с обнуление отступа слева*/
+.promo__img_margin {
+  margin-left: 0;
+}
+
+/*селектор контейнер текстового содержимого слайда*/
+.promo-slider-content {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  min-height: 500px;
+}
+
+/*селектор заголовка слайда*/
 .promo-slider-content__caption {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 1.18;
   letter-spacing: 0.5px;
+  padding: 0;
+  margin: 60px 0 0 0;
+  min-width: 400px;
 }
 
+/*селектор текста слайда*/
 .promo-slider-content__text {
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
   letter-spacing: 0.2px;
   color: #464646;
+  min-width: 490px;
+  margin: 20px 0 41px 0;
+}
+
+/*селектор кнопки  слайда*/
+.promo__button {
+  display: block;
+  width: 177px;
+  margin: 0 0 50px 0;
+}
+
+/*селекторы таблицы с информацией о товаре в слайде*/
+.promo-info {
+  padding: 0;
+  border-collapse: collapse;
+  width: 500px;
+  text-align: left;
+}
+
+.promo-info__row {
+  margin: 0;
+  padding: 0;
 }
 
 .promo-info__caption {
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-size: 36px;
-  font-weight: lighter;
+  font-family: "Gilroy light", "Arial", sans-serif;
+  font-size: 35.5px;
   line-height: 1.33;
   letter-spacing: 0.4px;
+}
+
+.promo-info__text_second-width,
+.promo-info__caption_second-width {
+  width: 139px;
+}
+
+.promo-info__caption_third-width,
+.promo-info__text_third-width {
+  width: 200px;
+
 }
 
 .promo-info__text {
@@ -407,6 +491,98 @@
   font-weight: 300;
   line-height: 1.54;
   letter-spacing: 0.1px;
+  padding-top: 5px;
+}
+
+/*декаративная цифра номера слайда , большая такая в правом углу*/
+.promo-slider__slide_1::after {
+  content: "01";
+  position: absolute;
+  top: -10px;
+  right: 65px;
+  width: 166px;
+  height: 131px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 180px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 1.8px;
+  color: #ffffff;
+  z-index: -1;
+}
+
+.promo-slider__slide_2::after {
+  content: "02";
+  position: absolute;
+  top: -15px;
+  right: 65px;
+  width: 166px;
+  height: 131px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 180px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 1.8px;
+  color: #ffffff;
+  z-index: -1;
+}
+
+.promo-slider__slide_3::after {
+  content: "03";
+  position: absolute;
+  top: -10px;
+  right: 65px;
+  width: 166px;
+  height: 131px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 180px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 1.8px;
+  color: #ffffff;
+  z-index: -1;
+}
+
+/*Полоса декоротивная в правом углу*/
+.promo-slider__slide::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 600px;
+  width: 100px;
+  height: 7px;
+  background-color: #ffffff;
+}
+
+/*селектор переключатели слайда*/
+.promo-pagination-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  width: 80px;
+  height: 14px;
+  top: 330px;
+  right: 82px;
+  z-index: 2;
+}
+
+.promo-pagination-slider__label {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url("../img/svg-images/slider-button-empty.svg") no-repeat;
+  background-size: 14px 14px;
+}
+
+.promo-pagination__input:checked + .promo-pagination-slider__label {
+  background: url("../img/svg-images/slider-button.svg") no-repeat;
+  background-size: 14px 14px;
+}
+
+.promo-pagination__input:not(:checked) + .promo-pagination-slider__label {
+  background: url("../img/svg-images/slider-button-empty.svg") no-repeat;
+  background-size: 14px 14px;
 }
 
 /*Блок products в index.html*/
@@ -416,11 +592,14 @@
 }
 
 .products__link {
+  display: block;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
   letter-spacing: 0.2px;
+  margin-top: 35px;
+
 }
 
 .products-list {
@@ -428,8 +607,9 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   min-height: 260px;
-  margin: 0;
   padding: 0;
+  margin-top: 45px;
+  margin-bottom: 100px;
 }
 
 .products__item {
@@ -705,7 +885,7 @@
   align-self: flex-end;
 }
 
-/*Блок popup_write-us*/
+/*Всплывающий блок popup_write-us при нажатии кнопки "Написать нам" */
 .popup-write-us__label {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 17px;
@@ -731,7 +911,7 @@
 
 /*блок catalog страницы catalog.html*/
 
-/*Заголовое и хлебные крошки*/
+/*Заголовое и хлебные крошки, а так же их состояния active\hover*/
 .catalog-title {
   display: flex;
   flex-direction: column;
@@ -758,6 +938,7 @@
   margin-left: 60px;
   min-width: 381px;
 }
+
 .breadcrumbs__item {
   margin-right: 40px;
   position: relative;
@@ -790,8 +971,7 @@
   color: rgba(0, 0, 0, 0.1);
 }
 
-
-
+/*секция с товарами*/
 .catalog-products__caption {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 17px;
@@ -893,6 +1073,29 @@
   line-height: 1.27;
   letter-spacing: 3.7px;
   text-transform: uppercase;
+  padding: 10px 24px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 42%;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  background: #f0c52e;
+}
+
+.button:hover {
+  background: #f0c52e;
+}
+
+.button:active {
+  opacity: 0.3;
 }
 
 .catalog {
