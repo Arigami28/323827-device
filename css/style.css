@@ -730,9 +730,13 @@
 }
 
 /*блок catalog страницы catalog.html*/
+
+/*Заголовое и хлебные крошки*/
 .catalog-title {
   display: flex;
   flex-direction: column;
+  min-height: 179px;
+  width: 1160px;
 }
 
 .catalog-title__caption {
@@ -741,12 +745,33 @@
   font-weight: 800;
   line-height: 1;
   letter-spacing: 0.5px;
+  min-width: 500px;
+  margin: 40px 0 25px 60px;
+  padding: 0;
 }
 
 .breadcrumbs {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: nowrap;
+  margin-left: 60px;
+  min-width: 381px;
+}
+.breadcrumbs__item {
+  margin-right: 40px;
+  position: relative;
+}
+
+.breadcrumbs__link_arrow-icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 7px;
+  right: -24px;
+  background: url("../img/svg-images/nav-arrow.svg") no-repeat;
 }
 
 .breadcrumbs__link {
@@ -764,6 +789,8 @@
 .breadcrumbs__link:active {
   color: rgba(0, 0, 0, 0.1);
 }
+
+
 
 .catalog-products__caption {
   font-family: "Gilroy", "Arial", sans-serif;
