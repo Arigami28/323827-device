@@ -193,34 +193,33 @@
   <section class="delivery">
     <div class="wrapper-content">
       <div class="delivery__pagination-slider">
-        <label class="delivery__label" for="delivery__input-delivery">
-          Доставка
-          <input class="delivery__input visually-hidden" type="checkbox" id="delivery__input-delivery">
-        </label>
-        <label class="delivery__label" for="delivery__input-guarantee">
-          Гарантия
-          <input class="delivery__input  visually-hidden" type="checkbox" id="delivery__input-guarantee">
-        </label>
-        <label class="delivery__label" for="delivery__input-credit">
-          Кредит
-          <input class="delivery__input  visually-hidden" type="checkbox" id="delivery__input-credit">
-        </label>
+        <input class="delivery__input visually-hidden" type="radio" id="delivery__input-delivery"
+               name="delivery__input-delivery" checked>
+        <label class="delivery__label delivery__label_size-first" for="delivery__input-delivery">Доставка</label>
+
+        <input class="delivery__input  visually-hidden" type="radio" id="delivery__input-guarantee"
+               name="delivery__input-delivery">
+        <label class="delivery__label delivery__label_size-second" for="delivery__input-guarantee">Гарантия</label>
+
+        <input class="delivery__input  visually-hidden" type="radio" id="delivery__input-credit"
+               name="delivery__input-delivery">
+        <label class="delivery__label delivery__label_size-third" for="delivery__input-credit">Кредит</label>
       </div>
       <div class="delivery__slider">
         <div class="delivery__slide delivery__slide_1">
           <h2 class="delivery__caption">Доставка</h2>
-          <p class="delivery__text">Мы с удовольствие доставим ваш товар прямо к вашему подъезду
-            совершенно бесплатно!Ведь мы неплохо&nbsp;заработаем, поднимая на ваш этаж.</p>
+          <p class="delivery__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем,&nbsp;поднимая его на ваш этаж.</p>
         </div>
         <div class="delivery__slide delivery__slide_2 visually-hidden">
           <h2 class="delivery__caption">Гарантия</h2>
-          <p class="delivery__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы
-            выдадим вам новый. Товар, не дом, конечно же.</p>
+          <p class="delivery__text">Если из-за возгорания купленного у нас товара у вас сгорит дом&nbsp;— не переживайте, мы
+            выдадим вам новый. Товар,&nbsp;не&nbsp;дом,&nbsp;конечно же.</p>
         </div>
         <div class="delivery__slide delivery__slide_3 visually-hidden">
           <h2 class="delivery__caption">Кредит</h2>
-          <p class="delivery__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
-            выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <p class="delivery__text">Залезть в долговую яму стало проще! Кредитные консультанты&nbsp;подберут для вас наиболее
+            выгодные условия&nbsp;кредита. Выгодные для нашего банка, разумеется.</p>
         </div>
       </div>
     </div>
