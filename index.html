@@ -195,15 +195,15 @@
       <div class="delivery__pagination-slider">
         <input class="delivery__input visually-hidden" type="radio" id="delivery__input-delivery"
                name="delivery__input-delivery" checked>
-        <label class="delivery__label delivery__label_size-first" for="delivery__input-delivery">Доставка</label>
+        <label class="delivery__label delivery__label_size-delivery" for="delivery__input-delivery">Доставка</label>
 
         <input class="delivery__input  visually-hidden" type="radio" id="delivery__input-guarantee"
                name="delivery__input-delivery">
-        <label class="delivery__label delivery__label_size-second" for="delivery__input-guarantee">Гарантия</label>
+        <label class="delivery__label delivery__label_size-guarantee" for="delivery__input-guarantee">Гарантия</label>
 
         <input class="delivery__input  visually-hidden" type="radio" id="delivery__input-credit"
                name="delivery__input-delivery">
-        <label class="delivery__label delivery__label_size-third" for="delivery__input-credit">Кредит</label>
+        <label class="delivery__label delivery__label_size-credit" for="delivery__input-credit">Кредит</label>
       </div>
       <div class="delivery__slider">
         <div class="delivery__slide delivery__slide_1">
@@ -213,12 +213,14 @@
         </div>
         <div class="delivery__slide delivery__slide_2 visually-hidden">
           <h2 class="delivery__caption">Гарантия</h2>
-          <p class="delivery__text">Если из-за возгорания купленного у нас товара у вас сгорит дом&nbsp;— не переживайте, мы
+          <p class="delivery__text">Если из-за возгорания купленного у нас товара у вас сгорит дом&nbsp;— не
+            переживайте, мы
             выдадим вам новый. Товар,&nbsp;не&nbsp;дом,&nbsp;конечно же.</p>
         </div>
         <div class="delivery__slide delivery__slide_3 visually-hidden">
           <h2 class="delivery__caption">Кредит</h2>
-          <p class="delivery__text">Залезть в долговую яму стало проще! Кредитные консультанты&nbsp;подберут для вас наиболее
+          <p class="delivery__text">Залезть в долговую яму стало проще! Кредитные консультанты&nbsp;подберут для вас
+            наиболее
             выгодные условия&nbsp;кредита. Выгодные для нашего банка, разумеется.</p>
         </div>
       </div>
@@ -231,49 +233,51 @@
     <a class="brands__link brands__link_img_vive" href="#"></a>
   </section>
   <section class="about-us">
-    <div class="about-us__content">
+    <div class="about-us__content about-us__content_padding-left">
       <h2 class="about-us__caption">О нас</h2>
-      <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p class="about-us__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
-        многими
-        транстпортными компаниями:</p>
+      <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика, который&nbsp;есть&nbsp;в&nbsp;каждом
+        из нас.</p>
+      <p class="about-us__text">Мы можем доставить ваш товар в самые отдаленные точки России!&nbsp;DEVICE&nbsp;работает&nbsp;со&nbsp;многими&nbsp;транстпортными&nbsp;компаниями:</p>
       <ul class="about-us__list">
         <li class="about-us__list-item">Деловые Линии</li>
         <li class="about-us__list-item">Автотрейдинг</li>
         <li class="about-us__list-item">ЖелДорЭкспедиция</li>
       </ul>
-      <a class="button" href="#">Подробнее о нас</a>
+      <a class="about-us__button button" href="#">Подробнее о нас</a>
     </div>
-    <div class="about-us__content">
+    <div class="about-us__content about-us__content_padding-right">
       <h2 class="about-us__caption">Контакты</h2>
       <p class="about-us__text">Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить
-        работоспособность покупки.Всякое бывает.</p>
+        работоспособность покупки. Всякое бывает.</p>
       <img class="about-us__img" src="img/maps/map-mini.jpg" width="560" height="222" alt="Карта">
-      <a class="button" href="#">Пишите нам</a>
+      <a class="about-us__button button" href="#">Напишите нам</a>
     </div>
   </section>
   <footer class="footer">
     <div class="wrapper-content">
-      <nav class="users-navigation">
-        <a class="footer__logo" href="#"></a>
-        <ul class="users-authorization">
-          <li class="users-authorization__item">
-            <a class="users-navigation__link" href="#">Войти</a>
+      <a class="footer__logo" href="#"></a>
+      <nav class="footer-users-navigation">
+        <ul class="footer-users-authorization">
+          <li class="footer-users-authorization__item">
+            <a class="footer-users-navigation__link
+                      footer-users-authorization__link_user-icon" href="#">Войти</a>
           </li>
         </ul>
-        <ul class="users-product">
-          <li class="users-product__item">
-            <a class="users-navigation__link" href="#">Сравнить</a>
+        <ul class="footer-users-product">
+          <li class="footer-users-product__item">
+            <a class="footer-users-navigation__link
+                      footer-users-product__link_compare-icon" href="#">Сравнить</a>
           </li>
-          <li class="users-product__item">
-            <a class="users-navigation__link" href="#">Корзина</a>
+          <li class="footer-users-product__item">
+            <a class="footer-users-navigation__link
+                      footer-users-product__link_cart-icon" href="#">Корзина</a>
           </li>
         </ul>
       </nav>
       <nav class="footer-navigation">
-        <address class="footer-navigation__text">г.Москва ул.Строителей, 15</address>
+        <address class="footer-navigation__text">г. Москва ул. Строителей, 15</address>
         <ul class="footer-navigation__list">
-          <li class="footer-navigation__item">
+          <li class="footer-navigation__item footer-navigation__item_margin">
             <a class="footer-navigation__link" href="#">Доставка</a>
           </li>
           <li class="footer-navigation__item">
@@ -283,23 +287,17 @@
             <a class="footer-navigation__link" href="#">Контакты</a>
           </li>
         </ul>
-        <a class="footer-navigation__text" href="tel:+74954959595">Тел: +7(495)495-95-95</a>
+        <a class="footer-navigation__text" href="tel:+74954959595">Тел.: +7 (495) 495-95-95
+
+        </a>
       </nav>
       <div class="social">
         <div class="social__list">
-          <a class="social__link social__link_bg_facebook" href="#">
-            <img class="social__img" src="http://placehold.it/32x32" width="32" height="32" alt="Facebook">
-          </a>
-          <a class="social__link social__link_bg_instagram" href="#">
-            <img class="social__img" src="http://placehold.it/32x32" width="32" height="32" alt="instagram">
-          </a>
-          <a class="social__link social__link_bg_twitter" href="#">
-            <img class="social__img" src="http://placehold.it/32x32" width="32" height="32" alt="twitter">
-          </a>
+          <a class="social__link social__link_bg_facebook" href="#"></a>
+          <a class="social__link social__link_bg_instagram" href="#"></a>
+          <a class="social__link social__link_bg_twitter" href="#"></a>
         </div>
-        <a class="social__htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="social_img" src="http://placehold.it/27x35" width="27" height="35" alt="htmlacademy">
-        </a>
+        <a class="social__htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </div>
     </div>
   </footer>
