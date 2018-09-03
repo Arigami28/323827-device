@@ -102,29 +102,33 @@
       <div class="wrapper-content">
         <h3 class="catalog-products__caption">Фильтр:</h3>
         <ul class="catalog-products__sort">
-          <li class="catalog-products__caption">Сортировка</li>
-          <li class="catalog-products__text">
-            <a class="catalog-products__link" href="#">По цене</a>
+          <li class="catalog-products__caption">Сортировка:</li>
+          <li class="catalog-products__header-text">
+            <a class="catalog-products__header-link catalog-products__header-text_select" href="#">По цене</a>
           </li>
-          <li class="catalog-products__text">
-            <a class="catalog-products__link" href="#">По типу</a>
+          <li class="catalog-products__header-text">
+            <a class="catalog-products__header-link" href="#">По типу</a>
           </li>
-          <li class="catalog-products__text">
-            <a class="catalog-products__link" href="#">По популярности</a>
+          <li class="catalog-products__header-text">
+            <a class="catalog-products__header-link" href="#">По популярности</a>
           </li>
         </ul>
+        <div class="catalog__header-arrow-bar">
+          <button class="catalog__arrow-up catalog__arrow_active" type="button"></button>
+          <button class="catalog__arrow-down" type="button"></button>
+        </div>
       </div>
     </header>
     <section class="catalog-products">
       <form class="catalog-products__filter" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="catalog-products__fieldset">
+        <fieldset class="catalog-products__fieldset catalog-products__fieldset_price">
           <legend class="catalog-products__legend">Стоймость</legend>
           <div class="range">
             <div class="range__bar">
               <div class="range__filling"></div>
+              <button class="range__item-left" type="button"></button>
+              <button class="range__item-right" type="button"></button>
             </div>
-            <button class="range__item" type="button"></button>
-            <button class="range__item" type="button"></button>
           </div>
           <label class="catalog-products__label" for="catalog-products__range-start">
             от
@@ -137,48 +141,49 @@
                    value="5000">
           </label>
         </fieldset>
-        <fieldset class="catalog-products__fieldset">
+        <fieldset class="catalog-products__fieldset catalog-products__fieldset_color">
           <legend class="catalog-products__legend">Цвет</legend>
-          <label class="catalog-products__label" for="catalog-products__chekbox-black">
-            Черный
-            <input class="catalog-products__chekbox visually-hidden" type="checkbox" name="color-black"
-                   id="catalog-products__chekbox-black">
-          </label>
-          <label class="catalog-products__label" for="catalog-products__chekbox-white">
-            Белый
-            <input class="catalog-products__chekbox visually-hidden" type="checkbox" name="color-white"
-                   id="catalog-products__chekbox-white">
-          </label>
-          <label class="catalog-products__label" for="catalog-products__chekbox-blue">
-            Синий
-            <input class="catalog-products__chekbox visually-hidden" type="checkbox" name="color-blue"
-                   id="catalog-products__chekbox-blue">
-          </label>
-          <label class="catalog-products__label" for="catalog-products__chekbox-red">
-            Красный
-            <input class="catalog-products__chekbox visually-hidden" type="checkbox" name="color-red"
-                   id="catalog-products__chekbox-red">
-          </label>
-          <label class="catalog-products__label" for="catalog-products__chekbox-pink">
-            Розовый
-            <input class="catalog-products__chekbox visually-hidden" type="checkbox" name="color-pink"
-                   id="catalog-products__chekbox-pink">
-          </label>
+          <ul class="catalog-products__list">
+            <li class="catalog-products__list-item">
+              <input class="catalog-products__chekbox visually-hidden" type="checkbox" name="color-black"
+                     id="catalog-products__chekbox-black" checked>
+              <label class="catalog-products__label-chekbox" for="catalog-products__chekbox-black">Черный</label>
+            </li>
+            <li class="catalog-products__list-item">
+              <input class="catalog-products__chekbox visually-hidden" type="checkbox" name="color-white"
+                     id="catalog-products__chekbox-white">
+              <label class="catalog-products__label-chekbox" for="catalog-products__chekbox-white">Белый</label>
+            </li>
+            <li class="catalog-products__list-item">
+              <input class="catalog-products__chekbox visually-hidden" type="checkbox" name="color-blue"
+                     id="catalog-products__chekbox-blue" checked>
+              <label class="catalog-products__label-chekbox" for="catalog-products__chekbox-blue">Синий</label>
+            </li>
+            <li class="catalog-products__list-item">
+              <input class="catalog-products__chekbox visually-hidden" type="checkbox" name="color-red"
+                     id="catalog-products__chekbox-red" checked>
+              <label class="catalog-products__label-chekbox" for="catalog-products__chekbox-red">Красный</label>
+            </li>
+            <li class="catalog-products__list-item">
+              <input class="catalog-products__chekbox visually-hidden" type="checkbox" name="color-pink"
+                     id="catalog-products__chekbox-pink">
+              <label class="catalog-products__label-chekbox" for="catalog-products__chekbox-pink">Розовый</label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset class="catalog-products__fieldset">
+        <fieldset class="catalog-products__fieldset catalog-products__fieldset_bluetooth">
           <legend class="catalog-products__legend">Bluetooth</legend>
-          <label class="catalog-products__label" for="catalog-products__radio-yes">
-            Есть
-            <input class="catalog-products__radio visually-hidden" type="radio" name="Bluetooth-yes"
-                   id="catalog-products__radio-yes">
-          </label>
-          <label class="catalog-products__label" for="catalog-products__radio-no">
-            Нет
-            <input class="catalog-products__radio visually-hidden" type="radio" name="Bluetooth-no"
-                   id="catalog-products__radio-no">
-          </label>
+
+          <input class="catalog-products__radio visually-hidden" type="radio" name="Bluetooth"
+                 id="catalog-products__radio-yes" checked>
+          <label class="catalog-products__label-radio" for="catalog-products__radio-yes">Есть</label>
+
+          <input class="catalog-products__radio visually-hidden" type="radio" name="Bluetooth"
+                 id="catalog-products__radio-no">
+          <label class="catalog-products__label-radio" for="catalog-products__radio-no">Нет</label>
+
         </fieldset>
-        <button class="button" type="submit">Показать</button>
+        <button class="catalog__filter-button button" type="submit">Показать</button>
       </form>
       <div class="catalog-products__content">
         <ul class="catalog-products__items">
