@@ -1187,30 +1187,6 @@
   opacity: 0.1;
 }
 
-/*Всплывающий блок popup_write-us при нажатии кнопки "Написать нам" */
-.popup-write-us__label {
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-size: 17px;
-  font-weight: 800;
-  line-height: 1.4;
-}
-
-.popup-write-us__textarea,
-.popup-write-us__input {
-  font-family: "Open sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 1.25;
-}
-
-.popup-write-us__submit {
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 1.27;
-  letter-spacing: 3.7px;
-  text-align: center;
-}
-
 /*блок catalog страницы catalog.html*/
 .catalog {
   width: 100%;
@@ -1288,7 +1264,8 @@
 
 .catalog__header {
   width: 100%;
-  background: linear-gradient(to right, #dbdbdb, #ebebeb)
+  background: linear-gradient(to right, #dcdcdc 0%, #dcdcdc 45%, #ebebeb 50%, #ebebeb 100%)
+  /* background: linear-gradient(to right, #dbdbdb, #ebebeb)*/
 }
 
 .catalog__header .wrapper-content {
@@ -1339,7 +1316,16 @@
 .catalog-products__header-link {
   font-size: 14px;
   line-height: 1.25;
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
+  opacity: 0.3;
+}
+
+.catalog-products__header-link:hover {
+  opacity: 0.6;
+}
+
+.catalog-products__header-link:active {
+  opacity: 1;
 }
 
 .catalog-products__header-text_select {
@@ -1369,6 +1355,16 @@
 }
 
 .catalog__arrow_active {
+  opacity: 1;
+}
+
+.catalog__arrow-up:hover,
+.catalog__arrow-down:hover {
+  opacity: 0.4;
+}
+
+.catalog__arrow-up:active,
+.catalog__arrow-down:active {
   opacity: 1;
 }
 
@@ -1506,6 +1502,14 @@
   background: url("../img/svg-images/checkbox-off.svg") no-repeat;
 }
 
+.catalog-products__chekbox:disabled + .catalog-products__label-chekbox {
+  opacity: 0.25;
+}
+
+.catalog-products__label-chekbox:hover {
+  opacity: 0.6;
+}
+
 .catalog-products__fieldset_bluetooth {
   margin-top: 34px;
   display: flex;
@@ -1546,6 +1550,14 @@
   top: 7px;
   left: -40px;
   background: url("../img/svg-images/radio-off.svg") no-repeat;
+}
+
+.catalog-products__radio:disabled + .catalog-products__label-radio {
+  opacity: 0.2;
+}
+
+.catalog-products__label-radio:hover {
+  opacity: 0.6;
 }
 
 .catalog__filter-button {
@@ -1834,4 +1846,129 @@
   opacity: 0.3;
 }
 
+.popup {
+  position: fixed;
+  top: 130px;
+  left: 50%;
+  margin-left: -480px;
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+  z-index: 3;
+}
+
+/*Всплывающий блок popup_write-us при нажатии кнопки "Написать нам" */
+
+.popup_write-us {
+  width: 960px;
+  height: 553px;
+  background-color: #ffffff;
+}
+
+.popup_map {
+  width: 960px;
+  height: 559px;
+}
+
+.popup_map .popup__button-close {
+  opacity: 0.5;
+}
+
+.popup__button-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+  background: url("../img/svg-images/modal-close.svg");
+  border: none;
+  cursor: pointer;
+}
+
+.popup-write-us__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 760px;
+  height: 380px;
+  margin: 88px auto;
+}
+
+.popup-write__wrapper-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 360px;
+  height: 100px;
+}
+
+.popup-write__wrapper-textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 760px;
+  height: 210px;
+}
+
+.popup-write-us__label {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.popup-write__wrapper-text .popup-write-us__label {
+  margin-bottom: 10px;
+}
+
+.popup-write__wrapper-textarea .popup-write-us__label {
+  margin-bottom: 10px;
+}
+
+.popup-write-us__input {
+  width: 340px;
+  height: 50px;
+  opacity: 0.5;
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(70, 70, 70, 0.4);
+  padding-left: 20px;
+  margin: 0;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.popup-write-us__textarea:hover,
+.popup-write-us__input:hover {
+  opacity: 0.8;
+  outline: none;
+}
+
+.popup-write-us__textarea:focus,
+.popup-write-us__input:focus {
+  background-color: #ffffff;
+  border: solid 3px #f0c52e;
+  opacity: 1;
+  color: rgba(70, 70, 70, 1);
+}
+
+.popup-write-us__textarea {
+  margin: 0;
+  height: 156px;
+  background-color: #f2f2f2;
+  border: none;
+  resize: none;
+  font-size: 14px;
+  padding-left: 20px;
+  line-height: 1.25;
+  opacity: 0.5;
+  color: rgba(70, 70, 70, 0.4)
+}
+
+.popup-write-us__button {
+  border: none;
+  background-color: inherit;
+  padding-left: 34px;
+  padding-right: 36px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
 

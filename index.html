@@ -302,31 +302,34 @@
     </div>
   </footer>
   <section class="popup popup_write-us visually-hidden">
-    <button class="popup-write-us__button-close" type="button"></button>
+    <button class="popup__button-close" type="button"></button>
     <form class="popup-write-us__form" method="post" action="https://echo.htmlacademy.ru">
-      <label class="popup-write-us__label" for="popup-write-us__input-FIO">
-        Ваше имя:
+
+      <div class="popup-write__wrapper-text">
+        <label class="popup-write-us__label" for="popup-write-us__input-FIO">Ваше имя:</label>
         <input class="popup-write-us__input" type="text" name="FIO" id="popup-write-us__input-FIO"
                placeholder="Имя Фамилия">
-      </label>
-      <label class="popup-write-us__label" for="popup-write-us__input-email">
-        Ваш e-mail:
+      </div>
+
+      <div class="popup-write__wrapper-text">
+        <label class="popup-write-us__label" for="popup-write-us__input-email">Ваш e-mail:</label>
         <input class="popup-write-us__input" type="text" name="email" id="popup-write-us__input-email"
                placeholder="email@example.com">
-      </label>
-      <label class="popup-write-us__label" for="popup-write-us__textarea-content">
-        Текс письма:
+      </div>
+
+      <div class="popup-write__wrapper-textarea">
+        <label class="popup-write-us__label" for="popup-write-us__textarea-content">Текст письма:</label>
         <textarea class="popup-write-us__textarea" name="textarea" id="popup-write-us__textarea-content"
                   placeholder="В свободной форме"></textarea>
-      </label>
-      <button class="button" name="submit" id="popup-write-us__submit" type="submit">Отправить</button>
+      </div>
+
+      <button class="popup-write-us__button button" name="submit" id="popup-write-us__submit" type="submit">Отправить
+      </button>
     </form>
   </section>
   <section class="popup popup_map visually-hidden">
-    <button class="popup-map__button-close" type="button"></button>
-    <div class="popup-map__content">
-      <img class="popup-map__img" src="img/maps/map-big.jpg" alt="Карта" width="999" height="598">
-    </div>
+    <button class="popup__button-close" type="button"></button>
+    <img class="popup-map__img" src="img/maps/map-big.jpg" alt="Карта" width="960" height="559">
   </section>
 </div>
 <script src="js/script.js"></script>
