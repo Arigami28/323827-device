@@ -41,7 +41,7 @@
         <li class="header-navigation__item header-navigation__item-margin">
           <a class="header-navigation__link
                     header-navigation__link_plus-icon
-                    " href="#">
+                    " href="catalog.html">
             Каталог товаров
           </a>
           <ul class="header-navigation__sub-list">
@@ -250,7 +250,7 @@
       <p class="about-us__text">Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить
         работоспособность покупки. Всякое бывает.</p>
       <img class="about-us__img" src="img/maps/map-mini.jpg" width="560" height="222" alt="Карта">
-      <a class="about-us__button button" href="#">Напишите нам</a>
+      <a class="about-us__button about-us__button_popup-write-us  button" href="#">Напишите нам</a>
     </div>
   </section>
   <footer class="footer">
@@ -308,19 +308,19 @@
       <div class="popup-write__wrapper-text">
         <label class="popup-write-us__label" for="popup-write-us__input-FIO">Ваше имя:</label>
         <input class="popup-write-us__input" type="text" name="FIO" id="popup-write-us__input-FIO"
-               placeholder="Имя Фамилия">
+               placeholder="Имя Фамилия" required>
       </div>
 
       <div class="popup-write__wrapper-text">
         <label class="popup-write-us__label" for="popup-write-us__input-email">Ваш e-mail:</label>
         <input class="popup-write-us__input" type="text" name="email" id="popup-write-us__input-email"
-               placeholder="email@example.com">
+               placeholder="email@example.com" required>
       </div>
 
       <div class="popup-write__wrapper-textarea">
         <label class="popup-write-us__label" for="popup-write-us__textarea-content">Текст письма:</label>
         <textarea class="popup-write-us__textarea" name="textarea" id="popup-write-us__textarea-content"
-                  placeholder="В свободной форме"></textarea>
+                  placeholder="В свободной форме" required></textarea>
       </div>
 
       <button class="popup-write-us__button button" name="submit" id="popup-write-us__submit" type="submit">Отправить
@@ -329,9 +329,11 @@
   </section>
   <section class="popup popup_map visually-hidden">
     <button class="popup__button-close" type="button"></button>
+    <iframe class="popup__iframe-map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1536259966717" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
     <img class="popup-map__img" src="img/maps/map-big.jpg" alt="Карта" width="960" height="559">
   </section>
 </div>
-<script src="js/script.js"></script>
+<script src="js/main.js">
+</script>
 </body>
 </html>
