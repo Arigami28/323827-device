@@ -82,11 +82,14 @@
   </header>
   <section class="promo">
 
-    <input class="promo-pagination__input promo-pagination__input_firs visually-hidden" type="radio" id="promo-pagination__slider1"
+    <input class="promo-pagination__input promo-pagination__input_firs visually-hidden" type="radio"
+           id="promo-pagination__slider1"
            name="promo-pagination__slider" checked>
-    <input class="promo-pagination__input promo-pagination__input_second visually-hidden" type="radio" id="promo-pagination__slider2"
+    <input class="promo-pagination__input promo-pagination__input_second visually-hidden" type="radio"
+           id="promo-pagination__slider2"
            name="promo-pagination__slider">
-    <input class="promo-pagination__input promo-pagination__input_third visually-hidden" type="radio" id="promo-pagination__slider3"
+    <input class="promo-pagination__input promo-pagination__input_third visually-hidden" type="radio"
+           id="promo-pagination__slider3"
            name="promo-pagination__slider">
 
     <article class="promo-slider">
@@ -156,9 +159,12 @@
       </div>
     </article>
     <div class="promo-pagination-slider">
-      <label class="promo-pagination-slider__label promo-pagination-slider__label_firs" for="promo-pagination__slider1"></label>
-      <label class="promo-pagination-slider__label promo-pagination-slider__label_second" for="promo-pagination__slider2"></label>
-      <label class="promo-pagination-slider__label promo-pagination-slider__label_third" for="promo-pagination__slider3"></label>
+      <label class="promo-pagination-slider__label promo-pagination-slider__label_firs"
+             for="promo-pagination__slider1"></label>
+      <label class="promo-pagination-slider__label promo-pagination-slider__label_second"
+             for="promo-pagination__slider2"></label>
+      <label class="promo-pagination-slider__label promo-pagination-slider__label_third"
+             for="promo-pagination__slider3"></label>
     </div>
   </section>
   <section class="products">
@@ -192,17 +198,15 @@
   </section>
   <section class="delivery">
     <div class="wrapper-content">
+      <input class="delivery__input delivery__input_firs visually-hidden" type="radio" id="delivery__input-delivery"
+             name="delivery__input-delivery" checked>
+      <input class="delivery__input delivery__input_second  visually-hidden" type="radio" id="delivery__input-guarantee"
+             name="delivery__input-delivery">
+      <input class="delivery__input delivery__input_third visually-hidden" type="radio" id="delivery__input-credit"
+             name="delivery__input-delivery">
       <div class="delivery__pagination-slider">
-        <input class="delivery__input visually-hidden" type="radio" id="delivery__input-delivery"
-               name="delivery__input-delivery" checked>
         <label class="delivery__label delivery__label_size-delivery" for="delivery__input-delivery">Доставка</label>
-
-        <input class="delivery__input  visually-hidden" type="radio" id="delivery__input-guarantee"
-               name="delivery__input-delivery">
         <label class="delivery__label delivery__label_size-guarantee" for="delivery__input-guarantee">Гарантия</label>
-
-        <input class="delivery__input  visually-hidden" type="radio" id="delivery__input-credit"
-               name="delivery__input-delivery">
         <label class="delivery__label delivery__label_size-credit" for="delivery__input-credit">Кредит</label>
       </div>
       <div class="delivery__slider">
@@ -211,13 +215,13 @@
           <p class="delivery__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем,&nbsp;поднимая его на ваш этаж.</p>
         </div>
-        <div class="delivery__slide delivery__slide_2 visually-hidden">
+        <div class="delivery__slide delivery__slide_2">
           <h2 class="delivery__caption">Гарантия</h2>
           <p class="delivery__text">Если из-за возгорания купленного у нас товара у вас сгорит дом&nbsp;— не
             переживайте, мы
             выдадим вам новый. Товар,&nbsp;не&nbsp;дом,&nbsp;конечно же.</p>
         </div>
-        <div class="delivery__slide delivery__slide_3 visually-hidden">
+        <div class="delivery__slide delivery__slide_3">
           <h2 class="delivery__caption">Кредит</h2>
           <p class="delivery__text">Залезть в долговую яму стало проще! Кредитные консультанты&nbsp;подберут для вас
             наиболее
@@ -329,7 +333,9 @@
   </section>
   <section class="popup popup_map visually-hidden">
     <button class="popup__button-close" type="button"></button>
-    <iframe class="popup__iframe-map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1536259966717" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe class="popup__iframe-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1536259966717"
+            width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
     <img class="popup-map__img" src="img/maps/map-big.jpg" alt="Карта" width="960" height="559">
   </section>
 </div>
