@@ -53,6 +53,7 @@ formPopupWriteUs.addEventListener("submit",function (event) {
 
 });
 
+
 /*popup map*/
 
 var openButtonPopupMap = document.querySelector(".about-us__img");
@@ -70,3 +71,17 @@ closeButtonPopupMap.addEventListener("click",function (event) {
   popupMap.classList.toggle("visually-hidden");
 
 });
+
+window.addEventListener("keydown",function (event) {
+  if (event.keyCode === 27){
+    if (!popupWriteUs.classList.contains("visually-hidden")) {
+      event.preventDefault();
+      popupWriteUs.classList.toggle("visually-hidden");
+    }
+
+    if (!popupMap.classList.contains("visually-hidden")) {
+      event.preventDefault();
+      popupMap.classList.toggle("visually-hidden");
+    }
+  }
+},true);
