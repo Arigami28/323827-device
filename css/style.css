@@ -1682,7 +1682,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 69px;
+  margin-top: 21px;
   margin-left: 72px;
   margin-bottom: 35px;
 }
@@ -1695,10 +1695,7 @@
   width: 360px;
   min-height: 458px;
   position: relative;
-}
-
-.catalog-products__item_margin-bottom {
-  margin-bottom: 48px;
+  margin-top: 48px;
 }
 
 .catalog-products__figcaption {
