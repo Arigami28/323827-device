@@ -10,9 +10,9 @@
 }
 
 @font-face {
-  font-family: "Gilroy light";
+  font-family: "Gilroy";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 300;
   src: url('../fonts/gilroylight.woff2') format('woff2'),
   url('../fonts/gilroylight.woff') format('woff2');
 }
@@ -168,14 +168,13 @@
 }
 
 .header-search-form::before {
-  content: "";
+  content: url("../img/svg-images/search-icon.svg");
   display: block;
   position: absolute;
   width: 20px;
   height: 20px;
   bottom: 3px;
   left: 63px;
-  background: url("../img/svg-images/search-icon.svg") no-repeat;
 }
 
 /*меню авторизации пользователя в header*/
@@ -200,13 +199,12 @@
 }
 
 .header-users-authorization__link_user-icon::after {
-  content: "";
+  content: url("../img/svg-images/header-user-icon.svg");
   width: 13px;
   height: 12px;
   position: absolute;
-  bottom: 10px;
+  top: -1px;
   left: -6px;
-  background: url("../img/svg-images/user-icon.svg") no-repeat;
 }
 
 /*меню "продуктовой корзины" в header*/
@@ -235,13 +233,12 @@
 }
 
 .header-users-product__link_compare-icon::after {
-  content: "";
+  content: url("../img/svg-images/header-compare.svg");
   position: absolute;
-  top: 10px;
+  top: -1px;
   left: 27px;
   width: 10px;
   height: 10px;
-  background: url("../img/svg-images/compare.svg");
 }
 
 .header-users-product__link_cart-icon {
@@ -249,13 +246,12 @@
 }
 
 .header-users-product__link_cart-icon:after {
-  content: "";
+  content: url("../img/svg-images/header-cart.svg");
   position: absolute;
-  top: 8px;
+  top: -1px;
   left: 7px;
   width: 13px;
   height: 14px;
-  background: url("../img/svg-images/cart.svg") no-repeat;
 }
 
 /*меню основной навигации по услугам*/
@@ -289,13 +285,12 @@
 }
 
 .header-navigation__link_plus-icon::before {
-  content: "";
+  content: url("../img/svg-images/plus.svg");
   position: absolute;
   width: 16px;
   height: 16px;
-  top: 3px;
+  top: 2px;
   left: 230px;
-  background: url("../img/svg-images/plus.svg");
   opacity: 0.3;
 }
 
@@ -384,19 +379,23 @@
 .promo-slider__slide {
   display: none;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   flex-wrap: nowrap;
-  width: 1040px;
+  width: 1160px;
   min-height: 550px;
 }
 
 /*селектор изображения в слайде*/
+.promo-img-wrapper{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .promo__img {
-  display: block;
-  align-self: flex-start;
   margin-top: 5px;
-  margin-left: 30px;
+  margin-left: -13px;
 }
 
 /*селектор изображения в слайде с обнуление отступа слева*/
@@ -408,8 +407,7 @@
 .promo-slider-content {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  min-height: 500px;
+  width: 50%;
 }
 
 /*селектор заголовка слайда*/
@@ -420,7 +418,7 @@
   line-height: 1.18;
   letter-spacing: 0.5px;
   padding: 0;
-  margin: 60px 0 0 0;
+  margin: 85px 0 0 21px;
   min-width: 400px;
 }
 
@@ -432,15 +430,15 @@
   letter-spacing: 0.2px;
   color: #464646;
   min-width: 490px;
-  margin: 20px 0 41px 0;
+  margin: 20px 0 41px 21px;
 }
 
 /*селектор кнопки  слайда*/
 .promo__button {
   display: block;
   width: 177px;
-  margin: 0 0 50px 0;
-  padding: 10px 24px;
+  margin: 0 0 50px 21px;
+  padding: 10px 21px 10px 24px;
   text-align: center;
 }
 
@@ -450,6 +448,7 @@
   border-collapse: collapse;
   width: 500px;
   text-align: left;
+  margin: 0 0 0 21px;
 }
 
 .promo-info__row {
@@ -458,7 +457,8 @@
 }
 
 .promo-info__caption {
-  font-family: "Gilroy light", "Arial", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: lighter;
   font-size: 35.5px;
   line-height: 1.33;
   letter-spacing: 0.4px;
@@ -597,17 +597,6 @@
   flex-wrap: nowrap;
 }
 
-.products__link {
-  display: block;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 1.33;
-  letter-spacing: 0.2px;
-  margin-top: 35px;
-
-}
-
 .products-list {
   display: flex;
   flex-wrap: nowrap;
@@ -619,43 +608,87 @@
 }
 
 .products__item {
-  display: block;
+  display: flex;
+  align-items: flex-end;
   width: 160px;
+  height: 241px;
 }
 
-.products__img {
+.products__link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  position: relative;
+  width: 160px;
+  min-height: 45px;
+  align-items: flex-end;
+}
+
+.popular__link_bg_virtual-reality::before {
+  content: "";
+  position: absolute;
+  top: -194px;
+  left: 1px;
   width: 160px;
   height: 160px;
-
-}
-
-.popular-img_bg_virtual-reality {
   background: #f7e296 url("../img/svg-images/popular-virtual-reality.svg") center no-repeat;
   background-size: 97px 55px;
 }
 
-.popular-img_bg_monopods-for-selfie {
-  background: #f7e296 url("../img/svg-images/popular-monopods-for-selfie.svg") bottom center no-repeat;
+.popular__link_bg_monopods-for-selfie::before {
+  content: "";
+  position: absolute;
+  top: -194px;
+  left: 1px;
+  width: 160px;
+  height: 160px;
+  background: #f7e296 url("../img/svg-images/popular-monopods-for-selfie.svg") 38px 41px no-repeat;
   background-size: 86px 117px;
 }
 
-.popular-img_bg_action-cameras {
-  background: #f7e296 url("../img/svg-images/popular-action-cameras.svg") center no-repeat;
+.popular__link_bg_action-cameras::before {
+  content: "";
+  position: absolute;
+  top: -195px;
+  left: 1px;
+  width: 160px;
+  height: 160px;
+  background: #f7e296 url("../img/svg-images/popular-action-cameras.svg") 50px 38px no-repeat;
   background-size: 71px 87px;
 }
 
-.popular-img_bg_fitness-bracelets {
-  background: #f7e296 url("../img/svg-images/popular-fitness-bracelets.svg") center no-repeat;
+.popular__link_bg_fitness-bracelets::before {
+  content: "";
+  position: absolute;
+  top: -195px;
+  left: 1px;
+  width: 160px;
+  height: 160px;
+  background: #f7e296 url("../img/svg-images/popular-fitness-bracelets.svg") 28px 50px no-repeat;
   background-size: 107px 65px;
 }
 
-.popular-item-smart-watch {
-  background: #f7e296 url("../img/svg-images/popular-smart-watch.svg") center no-repeat;
+.popular__link_bg_smart-watch::before {
+  content: "";
+  position: absolute;
+  top: -195px;
+  left: 1px;
+  width: 160px;
+  height: 160px;
+  background: #f7e296 url("../img/svg-images/popular-smart-watch.svg") 55px 32px no-repeat;
   background-size: 56px 98px;
 }
 
-.popular-item-quadrocopter {
-  background: #f7e296 url("../img/svg-images/popular-quadrocopter.svg") center no-repeat;
+.products__link_bg_quadrocopter::before {
+  content: "";
+  position: absolute;
+  top: -195px;
+  left: 1px;
+  width: 160px;
+  height: 160px;
+  background: #f7e296 url("../img/svg-images/popular-quadrocopter.svg") 13px 49px no-repeat;
   background-size: 132px 69px;
 }
 
@@ -838,30 +871,42 @@
 .brands__link {
   width: 260px;
   height: 100px;
-  filter: grayscale(100%);
-  opacity: 0.2;
+  opacity: 0.3;
+  background-blend-mode: color;
 }
-
-.brands__link_img_spgadgets {
-  background: url("../img/brands/logo-spgadgets.jpg") no-repeat;
+.brands__link:hover {
+  opacity: 1;
 }
-
 .brands__link_img_dji {
+  background: url("../img/brands/logo-dji-grayscale.png") no-repeat;
+}
+.brands__link_img_dji:hover {
   background: url("../img/brands/logo-dji.jpg") no-repeat;
 }
 
+.brands__link_img_spgadgets {
+  background: url("../img/brands/logo-spgadgets-grayscale.png") no-repeat;
+}
+.brands__link_img_spgadgets:hover {
+  background: url("../img/brands/logo-spgadgets.jpg") no-repeat;
+}
+
+
 .brands__link_img_gopro {
+  background: url("../img/brands/logo-gopro-grayscale.png") no-repeat;
+}
+.brands__link_img_gopro:hover {
   background: url("../img/brands/logo-gopro.jpg") no-repeat;
 }
 
 .brands__link_img_vive {
+  background: url("../img/brands/logo-vive-grayscale.png") no-repeat;
+}
+.brands__link_img_vive:hover {
   background: url("../img/brands/logo-vive.jpg") no-repeat;
 }
 
-.brands__link:hover {
-  filter: none;
-  opacity: 1;
-}
+
 
 /*Блок about-us в index.html*/
 .about-us {
@@ -1123,33 +1168,30 @@
 }
 
 .footer-users-product__link_compare-icon::before {
-  content: "";
+  content: url("../img/svg-images/footer-compare.svg");
   position: absolute;
-  top: 5px;
+  top: -5px;
   left: -19px;
   width: 10px;
   height: 10px;
-  background: url("../img/svg-images/compare.svg") no-repeat;
 }
 
 .footer-users-product__link_cart-icon::before {
-  content: "";
+  content: url("../img/svg-images/footer-cart.svg");
   position: absolute;
-  top: 5px;
+  top: -5px;
   left: -21px;
   width: 13px;
   height: 15px;
-  background: url("../img/svg-images/cart.svg") no-repeat;
 }
 
 .footer-users-authorization__link_user-icon::before {
-  content: "";
+  content: url("../img/svg-images/footer-user-icon.svg");
   position: absolute;
-  top: 4px;
-  left: -25px;
+  top: -5px;
+  left: -26px;
   width: 13px;
   height: 15px;
-  background: url("../img/svg-images/user-icon.svg") no-repeat;
 }
 
 .footer-users-navigation__link:hover {
@@ -1427,22 +1469,15 @@
 }
 
 .catalog-products__fieldset_price {
-  margin-top: 82px;
+  margin-top: 69px;
   position: relative;
 }
 
 .catalog-products__legend {
-
-}
-
-.catalog-products__legend::before {
-  content: "";
-  position: absolute;
-  top: -13px;
-  left: 14px;
-  width: 200px;
-  height: 2px;
-  background-color: #000000;
+  border-top: 2px outset  #000000;
+  width: 201px;
+  padding-top: 11px;
+  border-collapse: collapse;
 }
 
 .range {
@@ -1486,7 +1521,7 @@
 }
 
 .catalog-products__label {
-  font-family: "Gilroy light", "Arial", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
@@ -1494,7 +1529,7 @@
 }
 
 .catalog-products__text {
-  font-family: "Gilroy light", "Arial", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
@@ -1506,7 +1541,7 @@
 }
 
 .catalog-products__fieldset_color {
-  margin-top: 37px;
+  margin-top: 24px;
 }
 
 .catalog-products__label-chekbox {
@@ -1556,7 +1591,7 @@
 }
 
 .catalog-products__fieldset_bluetooth {
-  margin-top: 34px;
+  margin-top: 21px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1606,7 +1641,7 @@
 }
 
 .catalog__filter-button {
-  margin-top: 27px;
+  margin-top: 29px;
   margin-left: 58px;
   padding-left: 40px;
   padding-right: 40px;
@@ -1685,7 +1720,7 @@
 }
 
 .catalog-products__price {
-  font-family: "Gilroy light", "Arial", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: lighter;
   line-height: 1.5;
@@ -2014,10 +2049,7 @@
 .popup-write-us__button {
   border: none;
   background-color: inherit;
-  padding-left: 34px;
-  padding-right: 36px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding: 2px 36px 2px 34px;
 }
 
 .popup__iframe-map {
