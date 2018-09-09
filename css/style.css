@@ -163,6 +163,10 @@
   display: block;
 }
 
+.header-search-form__button:active {
+  display: block;
+}
+
 .header-search-form__input:focus {
   border-bottom: 2px solid black;
 }
@@ -387,12 +391,13 @@
 }
 
 /*селектор изображения в слайде*/
-.promo-img-wrapper{
+.promo-img-wrapper {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .promo__img {
   margin-top: 5px;
   margin-left: -13px;
@@ -874,12 +879,15 @@
   opacity: 0.3;
   background-blend-mode: color;
 }
+
 .brands__link:hover {
   opacity: 1;
 }
+
 .brands__link_img_dji {
   background: url("../img/brands/logo-dji-grayscale.png") no-repeat;
 }
+
 .brands__link_img_dji:hover {
   background: url("../img/brands/logo-dji.jpg") no-repeat;
 }
@@ -887,14 +895,15 @@
 .brands__link_img_spgadgets {
   background: url("../img/brands/logo-spgadgets-grayscale.png") no-repeat;
 }
+
 .brands__link_img_spgadgets:hover {
   background: url("../img/brands/logo-spgadgets.jpg") no-repeat;
 }
 
-
 .brands__link_img_gopro {
   background: url("../img/brands/logo-gopro-grayscale.png") no-repeat;
 }
+
 .brands__link_img_gopro:hover {
   background: url("../img/brands/logo-gopro.jpg") no-repeat;
 }
@@ -902,11 +911,10 @@
 .brands__link_img_vive {
   background: url("../img/brands/logo-vive-grayscale.png") no-repeat;
 }
+
 .brands__link_img_vive:hover {
   background: url("../img/brands/logo-vive.jpg") no-repeat;
 }
-
-
 
 /*Блок about-us в index.html*/
 .about-us {
@@ -1474,7 +1482,7 @@
 }
 
 .catalog-products__legend {
-  border-top: 2px outset  #000000;
+  border-top: 2px outset #000000;
   width: 201px;
   padding-top: 11px;
   border-collapse: collapse;
