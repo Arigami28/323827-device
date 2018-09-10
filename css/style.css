@@ -5,16 +5,16 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: bold;
-  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
-  url('../fonts/gilroyextrabold.woff') format('woff2');
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold.woff") format("woff2");
 }
 
 @font-face {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/gilroylight.woff2') format('woff2'),
-  url('../fonts/gilroylight.woff') format('woff2');
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+  url("../fonts/gilroylight.woff") format("woff2");
 }
 
 @font-face {
@@ -85,6 +85,7 @@
   background-image: linear-gradient(transparent 40px, #f7e296 40px);
 }
 
+.header__main-logo,
 .header__logo {
   width: 164px;
   height: 36px;
@@ -102,6 +103,7 @@
 .header__logo:active {
   opacity: 0.3;
 }
+
 
 /*строка с менюшками поиска, логина, корзины*/
 .header-users-navigation {
@@ -156,7 +158,7 @@
   background-color: inherit;
   margin-left: 60px;
   padding-left: 40px;
-  border: none;
+  border: 2px solid transparent;
 }
 
 .header-search-form__input:focus + .header-search-form__button {
@@ -712,7 +714,7 @@
 .delivery .wrapper-content {
   display: flex;
   flex-direction: row;
-  margin: 73px auto;
+  margin: 73px auto 0 auto;
   width: 1160px;
   min-height: 300px;
   position: relative;
@@ -877,7 +879,8 @@
   width: 260px;
   height: 100px;
   opacity: 0.3;
-  background-blend-mode: color;
+  margin-top:94px;
+  margin-bottom: 34px;
 }
 
 .brands__link:hover {
@@ -1068,6 +1071,7 @@
   margin: 0 auto;
 }
 
+.footer__index-logo,
 .footer__logo {
   display: block;
   position: absolute;
@@ -1740,7 +1744,7 @@
   align-items: flex-end;
 }
 
-.catalog-products__status::before {
+.catalog-products_item_status::before {
   content: "";
   position: absolute;
   top: 28px;
@@ -1752,7 +1756,7 @@
   border-radius: 50%;
 }
 
-.catalog-products__status::after {
+.catalog-products_item_status::after {
   content: "NEW";
   position: absolute;
   top: 48px;
