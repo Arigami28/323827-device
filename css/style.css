@@ -2024,8 +2024,8 @@
   padding-left: 20px;
   margin: 0;
   background-color: #f2f2f2;
-  border: none;
   outline: none;
+  border: 3px solid transparent;
 }
 
 .popup-write-us__textarea:hover,
@@ -2036,7 +2036,7 @@
 .popup-write-us__textarea:focus,
 .popup-write-us__input:focus {
   background-color: #ffffff;
-  border: solid 3px #f0c52e;
+  border: 3px solid  #f0c52e;
   opacity: 1;
   color: rgba(70, 70, 70, 1);
 }
@@ -2045,7 +2045,6 @@
   margin: 0;
   height: 156px;
   background-color: #f2f2f2;
-  border: none;
   resize: none;
   font-size: 14px;
   padding-left: 20px;
@@ -2053,6 +2052,7 @@
   opacity: 0.5;
   color: rgba(70, 70, 70, 0.4);
   outline: none;
+  border: 3px solid transparent;
 }
 
 .popup-write-us__button {
@@ -2075,7 +2075,7 @@
   margin: 0;
 }
 
-/*анимация всплываюших форм*/
+/*анимация форм write us*/
 
 @keyframes zoomIn {
   from {
@@ -2093,4 +2093,34 @@
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
   animation-duration: 3s;
+}
+
+/*анимация появления карты*/
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
 }
