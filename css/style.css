@@ -1224,7 +1224,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
+  margin-top: 63px;
   width: 100%;
   position: relative;
 }
@@ -1655,6 +1655,11 @@
 
 .catalog-products__label-radio:hover {
   opacity: 0.6;
+}
+
+.catalog-products__chekbox:focus + .catalog-products__label-chekbox,
+.catalog-products__radio:focus + .catalog-products__label-radio {
+  opacity: 1;
 }
 
 .catalog__filter-button {
