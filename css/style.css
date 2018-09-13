@@ -6,7 +6,7 @@
   font-style: normal;
   font-weight: bold;
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
-  url("../fonts/gilroyextrabold.woff") format("woff2");
+  url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/gilroylight.woff2") format("woff2"),
-  url("../fonts/gilroylight.woff") format("woff2");
+  url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
@@ -469,6 +469,11 @@
   font-size: 35.5px;
   line-height: 1.33;
   letter-spacing: 0.4px;
+}
+
+.promo-info__text_first-width,
+.promo-info__caption_first-width {
+  width: 50px;
 }
 
 .promo-info__text_second-width,
@@ -1726,6 +1731,7 @@
   letter-spacing: 0.2px;
   width: 265px;
   padding: 0;
+  cursor: pointer;
 }
 
 .catalog-products__price {
