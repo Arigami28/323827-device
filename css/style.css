@@ -625,9 +625,7 @@
 
 .products__item {
   display: flex;
-  align-items: flex-end;
   width: 160px;
-  height: 241px;
 }
 
 .products__link {
@@ -639,7 +637,8 @@
   position: relative;
   width: 160px;
   min-height: 45px;
-  align-items: flex-end;
+  align-self: flex-start;
+  margin-top: 196px;
 }
 
 .popular__link_bg_virtual-reality::before {
