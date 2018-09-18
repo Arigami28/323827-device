@@ -24,7 +24,7 @@ try {
 openButtonPopupWriteUs.addEventListener("click", function (event) {
   event.preventDefault();
   popupWriteUs.classList.toggle("visually-hidden");
-  popupWriteUs.classList.toggle("zoomIn");
+  popupWriteUs.classList.add("zoomIn");
 
   if (storageFIO || storageEmail || storageDescription) {
     inputFIOPopupWriteUs.value = storageFIO;
@@ -33,16 +33,19 @@ openButtonPopupWriteUs.addEventListener("click", function (event) {
   }
 
   inputFIOPopupWriteUs.focus();
+
 });
 
 closeButtonPopupWriteUs.addEventListener("click",function (event) {
   event.preventDefault();
   popupWriteUs.classList.toggle("visually-hidden");
+  popupWriteUs.classList.remove("zoomIn");
 });
 
 formPopupWriteUs.addEventListener("submit",function (event) {
-  if (!inputFIOPopupWriteUs || !inputEmailPopupWriteUs || !textareaPopupWriteUs) {
+  if (!inputFIOPopupWriteUs.value || !inputEmailPopupWriteUs.value || !textareaPopupWriteUs.value) {
     event.preventDefault();
+    popupWriteUs.classList.add("shake");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("FIO", inputFIOPopupWriteUs.value);
@@ -50,21 +53,17 @@ formPopupWriteUs.addEventListener("submit",function (event) {
       localStorage.setItem("Description", textareaPopupWriteUs.value);
     }
   }
-
 });
 
-
 /*popup map*/
-
 var openButtonPopupMap = document.querySelector(".about-us__img");
 var popupMap = document.querySelector(".popup_map");
 var closeButtonPopupMap = popupMap.querySelector(".popup__button-close");
 
-
 openButtonPopupMap.addEventListener("click", function (event) {
   event.preventDefault();
   popupMap.classList.toggle("visually-hidden");
-  popupMap.classList.toggle("zoomIn")
+  popupMap.classList.remove("zoomIn")
 });
 
 closeButtonPopupMap.addEventListener("click",function (event) {
@@ -73,6 +72,7 @@ closeButtonPopupMap.addEventListener("click",function (event) {
 
 });
 
+/*key 27 */
 window.addEventListener("keydown",function (event) {
   if (event.keyCode === 27){
     if (!popupWriteUs.classList.contains("visually-hidden")) {

@@ -37,6 +37,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
+  min-width: 1200px;
 }
 
 /*Сокрытие элементов сайта*/
@@ -160,6 +161,8 @@
   background-color: #f7e296;
   margin-left: 60px;
   padding-left: 40px;
+  margin-right: 0;
+  padding-right: 0;
   border: 2px solid transparent;
 }
 
@@ -189,12 +192,13 @@
 .header-users-authorization {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
   min-width: 263px;
   position: relative;
-
 }
 
+
+/*Александр Александрович Петров-Водкин*/
 .header-users-authorization__item {
   position: relative;
 }
@@ -205,6 +209,7 @@
   line-height: 2;
   letter-spacing: 0.2px;
   padding-left: 19px;
+  height: 50px;
 }
 
 .header-users-authorization__link_user-icon {
@@ -616,7 +621,8 @@
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  justify-content: flex-start;
   min-height: 260px;
   padding: 0;
   margin-top: 45px;
@@ -626,8 +632,11 @@
 .products__item {
   display: flex;
   width: 160px;
+  margin-right: 40px;
 }
-
+.products__item:nth-child(6n) {
+  margin-right:0;
+}
 .products__link {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
@@ -707,13 +716,43 @@
   background-size: 132px 69px;
 }
 
-.products__item:active {
-  opacity: 0.3;
+.products__link:hover::before{
+  background-color: #f0c52e;
+}
+.products__link:active::before{
+  background-color: #f0c52e;
+}
+.products__link:active{
+  color: rgba(0,0,0,0.3);
 }
 
-/*Блок delivery в index.html*/
+.popular__link_bg_virtual-reality:active::before {
+  background: #f0c52e url("../img/svg-images/popular-virtual-reality_active.svg") center no-repeat;
+}
+
+.popular__link_bg_monopods-for-selfie:active::before {
+  background: #f0c52e url("../img/svg-images/popular-monopods-for-selfie_active.svg") 38px 41px no-repeat;
+}
+
+.popular__link_bg_action-cameras:active::before {
+  background: #f0c52e url("../img/svg-images/popular-action-cameras_active.svg") 50px 38px no-repeat;
+}
+
+.popular__link_bg_fitness-bracelets:active::before {
+  background: #f0c52e url("../img/svg-images/popular-fitness-bracelets_active.svg") 28px 50px no-repeat;
+}
+
+.popular__link_bg_smart-watch:active::before {
+  background: #f0c52e url("../img/svg-images/popular-smart-watch_active.svg") 55px 32px no-repeat;
+}
+
+.products__link_bg_quadrocopter:active::before {
+  background: #f0c52e url("../img/svg-images/popular-quadrocopter_active.svg")  13px 49px no-repeat;
+}
+
+  /*Блок delivery в index.html*/
 .delivery {
-  min-height: 388px;
+  min-height: 383px;
   width: 100%;
   background-image: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px);
   padding-bottom: 5px;
@@ -840,7 +879,7 @@
 .delivery__input_third:checked ~ .delivery__pagination-slider .delivery__label_size-credit,
 .delivery__input_second:checked ~ .delivery__pagination-slider .delivery__label_size-guarantee,
 .delivery__input_firs:checked ~ .delivery__pagination-slider .delivery__label_size-delivery {
-  color: #f0c52e;
+  color: #f7e184;
 }
 
 .delivery__input_third:checked ~ .delivery__pagination-slider .delivery__label_size-credit::after,
@@ -1014,7 +1053,8 @@
 }
 
 .about-us__content_padding-left .about-us__button {
-  padding: 2px 23px 3px 20px;
+  /*padding: 2px 23px 3px 20px;*/
+  padding: 14px 23px 11px 20px;
 }
 
 .about-us__content_padding-left::before {
@@ -1047,7 +1087,8 @@
 
 .about-us__content_padding-right .about-us__button {
   margin-left: 19px;
-  padding: 2px 43px 3px 40px;
+  /*padding: 2px 43px 3px 40px;*/
+  padding: 14px 43px 11px 40px;
 }
 
 .about-us__content_padding-right::before {
@@ -1140,21 +1181,18 @@
   font-style: normal;
 }
 
+.footer-users-product__link:hover,
+.footer-users-authorization__link:hover,
 .footer-navigation__link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-users-product__link:active,
+.footer-users-authorization__link:active,
 .footer-navigation__link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-navigation__link:hover {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-navigation__link:active {
-  color: rgba(255, 255, 255, 0.3);
-}
 
 .footer-users-navigation {
   display: flex;
@@ -1450,7 +1488,7 @@
 }
 
 .catalog-products__header-text_select {
-  color: #000000;
+  opacity: 1;
 }
 
 .catalog__header-arrow-bar {
@@ -1683,10 +1721,8 @@
 }
 
 .catalog__filter-button {
-  margin-top: 29px;
-  margin-left: 58px;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin: 29px 0 0 58px;
+  padding: 14px 40px 14px 40px;
   border: none;
   background-color: #efefef;
 }
@@ -1805,15 +1841,16 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
+  align-items: center;
+  min-width: 210px;
   min-height: 60px;
   position: absolute;
-  top: 180px;
+  top: 165px;
   left: 75px;
 }
 
 .catalog-products__button {
-  padding-left: 40px;
+  padding:14px 39px 14px 37px;
 }
 
 .catalog-products__link-comparisons {
@@ -1843,7 +1880,16 @@
   display: flex;
 }
 
-.catalog-products__item:hover .catalog-products__img {
+
+.catalog-products__item:hover .catalog-products__figure::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 380px;
+  background-color: #eeeeee;
   opacity: 0.7;
 }
 
@@ -1952,7 +1998,7 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 42%;
+  top: calc(60% - 7px);
   width: 100%;
   height: 7px;
   z-index: -1;
@@ -1965,7 +2011,7 @@
 }
 
 .button:active {
-  opacity: 0.3;
+  color: rgba(0,0,0,0.3);
 }
 
 .popup {
@@ -1990,10 +2036,6 @@
   height: 559px;
 }
 
-.popup_map .popup__button-close {
-  opacity: 0.5;
-}
-
 .popup__button-close {
   position: absolute;
   top: 22px;
@@ -2004,8 +2046,14 @@
   border: none;
   cursor: pointer;
   z-index: 3;
+  opacity: 0.5;
 }
-
+.popup__button-close:hover{
+  opacity: 1;
+}
+.popup__button-close:active{
+  opacity: 0.3;
+}
 .popup-write-us__form {
   display: flex;
   justify-content: space-between;
@@ -2080,6 +2128,7 @@
   resize: none;
   font-size: 14px;
   padding-left: 20px;
+  padding-top: 18px;
   line-height: 1.25;
   opacity: 0.5;
   color: rgba(70, 70, 70, 0.4);
@@ -2155,4 +2204,60 @@
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
+}
+
+
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
 }
