@@ -456,7 +456,7 @@
   display: block;
   width: 177px;
   margin: 0 0 50px 21px;
-  padding: 10px 21px 10px 24px;
+  padding: 10px 18px 10px 24px;
   text-align: center;
 }
 
@@ -789,18 +789,18 @@
 }
 
 .delivery__label_size-delivery {
-  padding: 8px 18px 8px 21px;
-  margin-top: 7px;
-  margin-bottom: 26px;
+  padding: 9px 18px 9px 21px;
+  margin-top: 6px;
+  margin-bottom: 25px;
 }
 
 .delivery__label_size-guarantee {
-  padding: 8px 21px 8px 25px;
+  padding: 8px 20px 8px 25px;
   margin-bottom: 27px;
 }
 
 .delivery__label_size-credit {
-  padding: 8px 35px 8px 39px;
+  padding: 8px 35px 8px 37px;
 }
 
 /*контент слайдера доставки*/
@@ -819,10 +819,10 @@
 .delivery__pagination-slider::before {
   content: "";
   position: absolute;
-  height: 318px;
+  height: 319px;
   width: 7px;
-  top: -75px;
-  left: 278px;
+  top: -74px;
+  left: 277px;
   background-color: #000000;
 }
 
@@ -1053,8 +1053,7 @@
 }
 
 .about-us__content_padding-left .about-us__button {
-  /*padding: 2px 23px 3px 20px;*/
-  padding: 14px 23px 11px 20px;
+  padding: 13px 20px 11px 22px;
 }
 
 .about-us__content_padding-left::before {
@@ -1086,9 +1085,8 @@
 }
 
 .about-us__content_padding-right .about-us__button {
-  margin-left: 19px;
-  /*padding: 2px 43px 3px 40px;*/
-  padding: 14px 43px 11px 40px;
+  margin-left: 18px;
+  padding: 13px 37px 11px 43px;
 }
 
 .about-us__content_padding-right::before {
@@ -1153,13 +1151,14 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: flex-end;
 }
 
 .footer-navigation__item {
   margin-right: 35px;
-  padding-left: 5px;
 }
+
 
 .footer-navigation__text {
   font-size: 15px;
@@ -1998,9 +1997,9 @@
   content: "";
   position: absolute;
   left: 0;
-  top: calc(60% - 7px);
+  top: calc(60% - 8px);
   width: 100%;
-  height: 7px;
+  height: 8px;
   z-index: -1;
   background: #f0c52e;
 }
