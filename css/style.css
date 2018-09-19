@@ -857,7 +857,7 @@
   right: 45px;
   width: 156px;
   height: 186px;
-  background: url("../img/svg-images/delivery.svg") no-repeat;
+  background: url("../img/delivery-slider/delivery.png") no-repeat;
 }
 
 .delivery__slide_2::before {
@@ -867,7 +867,7 @@
   right: 45px;
   width: 171px;
   height: 194px;
-  background: url("../img/svg-images/warranty.svg") no-repeat;
+  background: url("../img/delivery-slider/warranty.png") no-repeat;
 }
 
 .delivery__slide_3::before {
@@ -877,7 +877,7 @@
   right: 45px;
   width: 156px;
   height: 186px;
-  background: url("../img/svg-images/credit.svg") no-repeat;
+  background: url("../img/delivery-slider/credit.png") no-repeat;
 }
 
 .delivery__input_third:active ~ .delivery__pagination-slider .delivery__label_size-credit,
@@ -938,7 +938,7 @@
   height: 100px;
   opacity: 0.3;
   margin-top:94px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 }
 
 .brands__link:hover {
@@ -1030,7 +1030,7 @@
 }
 
 .about-us__list {
-  margin: 66px 0 61px 36px;
+  margin: 66px 0 65px 36px;
   padding: 0;
 }
 
@@ -1070,9 +1070,9 @@
   content: "";
   display: block;
   position: absolute;
-  top: 58px;
+  top: 57px;
   left: 0;
-  height: 7px;
+  height: 8px;
   width: 80px;
   background-color: #000000;
 }
@@ -1103,9 +1103,9 @@
   content: "";
   display: block;
   position: absolute;
-  top: 58px;
+  top: 57px;
   left: 600px;
-  height: 7px;
+  height: 8px;
   width: 80px;
   background-color: #000000;
 }
