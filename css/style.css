@@ -880,12 +880,17 @@
   background: url("../img/svg-images/credit.svg") no-repeat;
 }
 
+.delivery__input_third:active ~ .delivery__pagination-slider .delivery__label_size-credit,
+.delivery__input_second:active ~ .delivery__pagination-slider .delivery__label_size-guarantee,
+.delivery__input_firs:active ~ .delivery__pagination-slider .delivery__label_size-delivery,
 .delivery__input_third:checked ~ .delivery__pagination-slider .delivery__label_size-credit,
 .delivery__input_second:checked ~ .delivery__pagination-slider .delivery__label_size-guarantee,
 .delivery__input_firs:checked ~ .delivery__pagination-slider .delivery__label_size-delivery {
   color: #f7e184;
 }
-
+.delivery__input_third:active ~ .delivery__pagination-slider .delivery__label_size-credit::after,
+.delivery__input_second:active ~ .delivery__pagination-slider .delivery__label_size-guarantee::after,
+.delivery__input_firs:active ~ .delivery__pagination-slider .delivery__label_size-delivery::after,
 .delivery__input_third:checked ~ .delivery__pagination-slider .delivery__label_size-credit::after,
 .delivery__input_second:checked ~ .delivery__pagination-slider .delivery__label_size-guarantee::after,
 .delivery__input_firs:checked ~ .delivery__pagination-slider .delivery__label_size-delivery::after {
@@ -899,6 +904,7 @@
   z-index: -1;
   height: 100%;
 }
+
 
 .delivery__input:not:checked + .delivery__label::after {
   display: none;
