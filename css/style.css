@@ -1359,7 +1359,7 @@
 .catalog-title {
   display: flex;
   flex-direction: column;
-  min-height: 179px;
+  min-height: 181px;
   width: 1160px;
 }
 
@@ -1442,7 +1442,7 @@
 
 .wrapper-content > .catalog-products__caption {
   margin: 0;
-  padding: 25px 176px 27px 59px;
+  padding: 25px 176px 22px 59px;
   max-width: 93px;
 }
 
@@ -1730,7 +1730,7 @@
 }
 
 .catalog__filter-button {
-  margin: 29px 0 0 58px;
+  margin: 15px 0 0 58px;
   padding: 14px 40px 14px 40px;
   border: none;
   background-color: #efefef;
