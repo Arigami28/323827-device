@@ -63,7 +63,7 @@ var closeButtonPopupMap = popupMap.querySelector(".popup__button-close");
 openButtonPopupMap.addEventListener("click", function (event) {
   event.preventDefault();
   popupMap.classList.toggle("visually-hidden");
-  popupMap.classList.remove("zoomIn")
+  popupMap.classList.add("zoomIn")
 });
 
 closeButtonPopupMap.addEventListener("click",function (event) {
