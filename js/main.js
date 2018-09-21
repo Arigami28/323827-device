@@ -25,15 +25,15 @@ openButtonPopupWriteUs.addEventListener("click", function (event) {
   event.preventDefault();
   popupWriteUs.classList.toggle("visually-hidden");
   popupWriteUs.classList.add("zoomIn");
-
+  setTimeout(function() {
+    popupWriteUs.classList.remove('zoomIn');
+  }, 2000);
   if (storageFIO || storageEmail || storageDescription) {
     inputFIOPopupWriteUs.value = storageFIO;
     inputEmailPopupWriteUs.value = storageEmail;
     textareaPopupWriteUs.value = storageDescription;
   }
-
   inputFIOPopupWriteUs.focus();
-
 });
 
 closeButtonPopupWriteUs.addEventListener("click",function (event) {
@@ -43,9 +43,14 @@ closeButtonPopupWriteUs.addEventListener("click",function (event) {
 });
 
 formPopupWriteUs.addEventListener("submit",function (event) {
+
   if (!inputFIOPopupWriteUs.value || !inputEmailPopupWriteUs.value || !textareaPopupWriteUs.value) {
     event.preventDefault();
     popupWriteUs.classList.add("shake");
+    setTimeout(function() {
+      popupWriteUs.classList.remove('shake');
+    }, 2000);
+
   } else {
     if (isStorageSupport) {
       localStorage.setItem("FIO", inputFIOPopupWriteUs.value);
@@ -53,6 +58,7 @@ formPopupWriteUs.addEventListener("submit",function (event) {
       localStorage.setItem("Description", textareaPopupWriteUs.value);
     }
   }
+/*  popupWriteUs.classList.toggle("shake");*/
 });
 
 /*popup map*/
@@ -86,3 +92,7 @@ window.addEventListener("keydown",function (event) {
     }
   }
 },true);
+
+
+
+

@@ -214,6 +214,7 @@
   letter-spacing: 0.2px;
   padding-left: 19px;
   height: 50px;
+  text-overflow: ellipsis;
 }
 
 .header-users-authorization__link_user-icon {
@@ -1191,13 +1192,18 @@
 }
 
 .footer-users-product__link:hover,
-.footer-users-authorization__link:hover,
+.footer-users-authorization__link:hover {
+  opacity: 1;
+}
+
 .footer-navigation__link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-users-product__link:active,
-.footer-users-authorization__link:active,
+.footer-users-authorization__link:active {
+  opacity: 0.3;
+}
 .footer-navigation__link:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1214,7 +1220,6 @@
 .footer-users-authorization {
   display: flex;
   justify-content: flex-start;
-
 }
 
 .footer-users-product {
@@ -1240,7 +1245,13 @@
 
 .footer-users-authorization__link {
   padding-left: 18px;
+  opacity: 0.7;
 }
+
+.footer-users-product__link{
+  opacity: 0.7;
+}
+
 .footer-users-authorization__link_user-icon {
   padding-left: 30px;
 }
@@ -1346,7 +1357,7 @@
 }
 
 .social__htmlacademy:active {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 /*блок catalog страницы catalog.html*/
@@ -2213,6 +2224,7 @@
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
+  animation-duration: 2s;
 }
 
 
@@ -2269,4 +2281,5 @@
 .shake {
   -webkit-animation-name: shake;
   animation-name: shake;
+  animation-duration: 2s;
 }
